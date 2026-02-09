@@ -64,22 +64,22 @@ export default function MemoriesModal({
           transition={{ duration: 0.4, ease: "easeInOut" }}
           onClick={handleClose}
         >
-          {/* Header */}
-          <div className="sticky z-10 top-0 left-0 right-0 p-6 md:p-9 flex justify-end gap-3.5 bg-[#212121]/80 backdrop-blur-sm">
-            {/* Audio button removed */}
-            <button
-              onClick={handleClose}
-              className="bg-[#ffffffcc] hover:bg-[#C8E4C2] active:bg-[#C8E4C2] rounded-full text-black cursor-pointer p-3 transition-all"
-            >
-              <svg width="17" height="17" viewBox="0 0 16 16" fill="none">
-                <path d="M11.25 4.75L4.75 11.25M4.75 4.75L11.25 11.25" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
-          </div>
+          {/* Floating Close Button */}
+          <button
+            onClick={handleClose}
+            className="fixed top-2 right-2 sm:top-4 sm:right-4 md:top-6 md:right-6 z-[110] bg-white hover:bg-[#C8E4C2] active:bg-[#C8E4C2] rounded-full text-black cursor-pointer p-2 sm:p-3 shadow-lg transition-all"
+            aria-label="Close modal"
+            style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.15)' }}
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M15 5L5 15M5 5l10 10" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+
 
           {/* Content */}
           <div
-            className="w-full px-6 lg:container mx-auto"
+            className="w-full px-1 xs:px-2 sm:px-4 md:px-6 max-w-full lg:container mx-auto"
             onClick={e => e.stopPropagation()}
           >
             {/* Mobile Header */}
@@ -90,21 +90,25 @@ export default function MemoriesModal({
             </div>
 
             {/* Image + Content */}
-            <div className="flex flex-col md:flex-row items-center px-48 py-24 justify-center gap-2 md:gap-2  text-center">
+            <div className="flex flex-col md:flex-row items-center px-0 md:px-6 lg:px-24 py-4 md:py-16 justify-center gap-4 md:gap-6 text-center w-full">
               {/* Image */}
-              <div className="flex-shrink-0 w-full md:w-64 lg:w-72 sticky md:relative flex justify-center">
-                <div className="relative overflow-hidden -translate-y-6 md:-translate-y-0 flex justify-center">
-                  <img
-                    alt={selected.name}
-                    src={selected.image_src.large}
-                    loading="eager"
-                    className="w-full h-[260px] md:h-[320px] lg:h-[360px] object-cover rounded-xl shadow-lg mx-auto"
-                  />
+              {selected.image_src?.large && (
+                <div className="flex-shrink-0 w-full max-w-[320px] sm:max-w-[400px] md:w-64 lg:w-72 sticky md:relative flex justify-center mx-auto">
+                  <div className="relative overflow-hidden -translate-y-2 md:-translate-y-0 flex justify-center">
+                    <img
+                      alt={selected.name}
+                      src={selected.image_src.large}
+                      loading="eager"
+                      className="w-full h-40 xs:h-48 sm:h-60 md:h-[320px] lg:h-[360px] object-cover rounded-xl shadow-lg mx-auto"
+                    />
+                  </div>
                 </div>
-              </div>
+              )}
+
+
 
               {/* Content */}
-              <div className="flex-1 pt-6 md:pt-0 xl:ml-8 flex flex-col items-start justify-start text-left">
+              <div className="flex-1 pt-4 md:pt-0 xl:ml-8 flex flex-col items-start justify-start text-left w-full max-w-full">
                 <h2 className="text-5xl font-bethany mb-4 text-white hidden md:block">{selected.name}</h2>
                 <motion.p
                   whileHover={{ scale: 1.05 }}
@@ -157,7 +161,41 @@ export default function MemoriesModal({
                   )}
                 </div>
               </div>
+
             </div>
+            {/* 2x2 Image Grid */}
+            {(selected.image1 || selected.image2 || selected.image3 || selected.image4) && (
+              <div className="w-full flex justify-center items-center py-4 md:py-8">
+                <div className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3 md:gap-6 w-full max-w-[320px] sm:max-w-[400px] md:w-[700px] md:max-w-3xl lg:w-[900px]">
+                  {selected.image1 && <img src={selected.image1} alt="image1" className="w-full h-24 xs:h-32 sm:h-44 md:h-80 object-cover rounded-xl shadow-lg" />}
+                  {selected.image2 && <img src={selected.image2} alt="image2" className="w-full h-24 xs:h-32 sm:h-44 md:h-80 object-cover rounded-xl shadow-lg" />}
+                  {selected.image3 && <img src={selected.image3} alt="image3" className="w-full h-24 xs:h-32 sm:h-44 md:h-80 object-cover rounded-xl shadow-lg" />}
+                  {selected.image4 && <img src={selected.image4} alt="image4" className="w-full h-24 xs:h-32 sm:h-44 md:h-80 object-cover rounded-xl shadow-lg" />}
+                </div>
+              </div>
+            )}
+            {/* Video */}
+            {selected.videoLink && (
+              <div className="flex justify-center items-center w-full py-4 md:py-8">
+                <div className="w-full max-w-[320px] sm:max-w-[400px] md:max-w-2xl">
+                  <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
+                    <iframe
+                      src={selected.videoLink}
+                      title=""
+                      frameBorder="0"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      className="absolute top-0 left-0 w-full h-full rounded-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
+
+
+
+
           </div>
         </motion.div>
       )}

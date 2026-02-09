@@ -378,35 +378,32 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
             },
             onClick: handleClose,
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "sticky z-10 top-0 left-0 right-0 p-6 md:p-9 flex justify-end gap-3.5 bg-[#212121]/80 backdrop-blur-sm",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: handleClose,
-                        className: "bg-[#ffffffcc] hover:bg-[#C8E4C2] active:bg-[#C8E4C2] rounded-full text-black cursor-pointer p-3 transition-all",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                            width: "17",
-                            height: "17",
-                            viewBox: "0 0 16 16",
-                            fill: "none",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                d: "M11.25 4.75L4.75 11.25M4.75 4.75L11.25 11.25",
-                                stroke: "black",
-                                strokeWidth: "1.5",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/MemoriesModal.tsx",
-                                lineNumber: 75,
-                                columnNumber: 17
-                            }, this)
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    onClick: handleClose,
+                    className: "fixed top-2 right-2 sm:top-4 sm:right-4 md:top-6 md:right-6 z-[110] bg-white hover:bg-[#C8E4C2] active:bg-[#C8E4C2] rounded-full text-black cursor-pointer p-2 sm:p-3 shadow-lg transition-all",
+                    "aria-label": "Close modal",
+                    style: {
+                        boxShadow: '0 2px 12px rgba(0,0,0,0.15)'
+                    },
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                        width: "20",
+                        height: "20",
+                        viewBox: "0 0 20 20",
+                        fill: "none",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M15 5L5 15M5 5l10 10",
+                            stroke: "black",
+                            strokeWidth: "2",
+                            strokeLinecap: "round",
+                            strokeLinejoin: "round"
                         }, void 0, false, {
                             fileName: "[project]/src/components/MemoriesModal.tsx",
-                            lineNumber: 74,
+                            lineNumber: 75,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/MemoriesModal.tsx",
-                        lineNumber: 70,
+                        lineNumber: 74,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
@@ -415,7 +412,7 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full px-6 lg:container mx-auto",
+                    className: "w-full px-1 xs:px-2 sm:px-4 md:px-6 max-w-full lg:container mx-auto",
                     onClick: (e)=>e.stopPropagation(),
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -444,41 +441,41 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col md:flex-row items-center px-48 py-24 justify-center gap-2 md:gap-2  text-center",
+                            className: "flex flex-col md:flex-row items-center px-0 md:px-6 lg:px-24 py-4 md:py-16 justify-center gap-4 md:gap-6 text-center w-full",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex-shrink-0 w-full md:w-64 lg:w-72 sticky md:relative flex justify-center",
+                                selected.image_src?.large && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex-shrink-0 w-full max-w-[320px] sm:max-w-[400px] md:w-64 lg:w-72 sticky md:relative flex justify-center mx-auto",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative overflow-hidden -translate-y-6 md:-translate-y-0 flex justify-center",
+                                        className: "relative overflow-hidden -translate-y-2 md:-translate-y-0 flex justify-center",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                             alt: selected.name,
                                             src: selected.image_src.large,
                                             loading: "eager",
-                                            className: "w-full h-[260px] md:h-[320px] lg:h-[360px] object-cover rounded-xl shadow-lg mx-auto"
+                                            className: "w-full h-40 xs:h-48 sm:h-60 md:h-[320px] lg:h-[360px] object-cover rounded-xl shadow-lg mx-auto"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/MemoriesModal.tsx",
-                                            lineNumber: 97,
-                                            columnNumber: 19
+                                            lineNumber: 98,
+                                            columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/MemoriesModal.tsx",
-                                        lineNumber: 96,
-                                        columnNumber: 17
+                                        lineNumber: 97,
+                                        columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/MemoriesModal.tsx",
-                                    lineNumber: 95,
-                                    columnNumber: 15
+                                    lineNumber: 96,
+                                    columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex-1 pt-6 md:pt-0 xl:ml-8 flex flex-col items-start justify-start text-left",
+                                    className: "flex-1 pt-4 md:pt-0 xl:ml-8 flex flex-col items-start justify-start text-left w-full max-w-full",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "text-5xl font-bethany mb-4 text-white hidden md:block",
                                             children: selected.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/MemoriesModal.tsx",
-                                            lineNumber: 108,
+                                            lineNumber: 112,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -496,7 +493,7 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
                                             children: selected.seat
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/MemoriesModal.tsx",
-                                            lineNumber: 109,
+                                            lineNumber: 113,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -504,7 +501,7 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
                                             children: selected.dates
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/MemoriesModal.tsx",
-                                            lineNumber: 117,
+                                            lineNumber: 121,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -515,7 +512,7 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
                                             children: mainText
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/MemoriesModal.tsx",
-                                            lineNumber: 118,
+                                            lineNumber: 122,
                                             columnNumber: 17
                                         }, this),
                                         authorText && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -523,7 +520,7 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
                                             children: authorText
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/MemoriesModal.tsx",
-                                            lineNumber: 119,
+                                            lineNumber: 123,
                                             columnNumber: 32
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -539,12 +536,12 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
                                                         children: "পোস্টের ডাউনলোড করুন "
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/MemoriesModal.tsx",
-                                                        lineNumber: 130,
+                                                        lineNumber: 134,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/MemoriesModal.tsx",
-                                                    lineNumber: 124,
+                                                    lineNumber: 128,
                                                     columnNumber: 21
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     disabled: true,
@@ -554,12 +551,12 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
                                                         children: "পোস্টের ডাউনলোড করুন "
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/MemoriesModal.tsx",
-                                                        lineNumber: 137,
+                                                        lineNumber: 141,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/MemoriesModal.tsx",
-                                                    lineNumber: 133,
+                                                    lineNumber: 137,
                                                     columnNumber: 21
                                                 }, this)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -570,12 +567,12 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
                                                         children: "শেয়ার করুন"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/MemoriesModal.tsx",
-                                                        lineNumber: 144,
+                                                        lineNumber: 148,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/MemoriesModal.tsx",
-                                                    lineNumber: 140,
+                                                    lineNumber: 144,
                                                     columnNumber: 19
                                                 }, this),
                                                 selected.videoLink && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -597,37 +594,37 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
                                                                 d: "M23.498 6.186a2.994 2.994 0 0 0-2.112-2.116C19.228 3.5 12 3.5 12 3.5s-7.228 0-9.386.57A2.994 2.994 0 0 0 .502 6.186C0 8.344 0 12 0 12s0 3.656.502 5.814a2.994 2.994 0 0 0 2.112 2.116C4.772 20.5 12 20.5 12 20.5s7.228 0 9.386-.57a2.994 2.994 0 0 0 2.112-2.116C24 15.656 24 12 24 12s0-3.656-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/MemoriesModal.tsx",
-                                                                lineNumber: 154,
+                                                                lineNumber: 158,
                                                                 columnNumber: 126
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/MemoriesModal.tsx",
-                                                            lineNumber: 154,
+                                                            lineNumber: 158,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "ইউটিউব ভিডিও"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/MemoriesModal.tsx",
-                                                            lineNumber: 155,
+                                                            lineNumber: 159,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/MemoriesModal.tsx",
-                                                    lineNumber: 147,
+                                                    lineNumber: 151,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/MemoriesModal.tsx",
-                                            lineNumber: 122,
+                                            lineNumber: 126,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/MemoriesModal.tsx",
-                                    lineNumber: 107,
+                                    lineNumber: 111,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -635,6 +632,92 @@ function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = 
                             fileName: "[project]/src/components/MemoriesModal.tsx",
                             lineNumber: 93,
                             columnNumber: 13
+                        }, this),
+                        (selected.image1 || selected.image2 || selected.image3 || selected.image4) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "w-full flex justify-center items-center py-4 md:py-8",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3 md:gap-6 w-full max-w-[320px] sm:max-w-[400px] md:w-[700px] md:max-w-3xl lg:w-[900px]",
+                                children: [
+                                    selected.image1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                        src: selected.image1,
+                                        alt: "image1",
+                                        className: "w-full h-24 xs:h-32 sm:h-44 md:h-80 object-cover rounded-xl shadow-lg"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/MemoriesModal.tsx",
+                                        lineNumber: 170,
+                                        columnNumber: 39
+                                    }, this),
+                                    selected.image2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                        src: selected.image2,
+                                        alt: "image2",
+                                        className: "w-full h-24 xs:h-32 sm:h-44 md:h-80 object-cover rounded-xl shadow-lg"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/MemoriesModal.tsx",
+                                        lineNumber: 171,
+                                        columnNumber: 39
+                                    }, this),
+                                    selected.image3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                        src: selected.image3,
+                                        alt: "image3",
+                                        className: "w-full h-24 xs:h-32 sm:h-44 md:h-80 object-cover rounded-xl shadow-lg"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/MemoriesModal.tsx",
+                                        lineNumber: 172,
+                                        columnNumber: 39
+                                    }, this),
+                                    selected.image4 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                        src: selected.image4,
+                                        alt: "image4",
+                                        className: "w-full h-24 xs:h-32 sm:h-44 md:h-80 object-cover rounded-xl shadow-lg"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/MemoriesModal.tsx",
+                                        lineNumber: 173,
+                                        columnNumber: 39
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/MemoriesModal.tsx",
+                                lineNumber: 169,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                            lineNumber: 168,
+                            columnNumber: 15
+                        }, this),
+                        selected.videoLink && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex justify-center items-center w-full py-4 md:py-8",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-full max-w-[320px] sm:max-w-[400px] md:max-w-2xl",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
+                                        src: selected.videoLink,
+                                        title: "",
+                                        frameBorder: "0",
+                                        allow: "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+                                        referrerPolicy: "strict-origin-when-cross-origin",
+                                        allowFullScreen: true,
+                                        className: "absolute top-0 left-0 w-full h-full rounded-lg"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/MemoriesModal.tsx",
+                                        lineNumber: 182,
+                                        columnNumber: 21
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/MemoriesModal.tsx",
+                                    lineNumber: 181,
+                                    columnNumber: 19
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/MemoriesModal.tsx",
+                                lineNumber: 180,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                            lineNumber: 179,
+                            columnNumber: 15
                         }, this)
                     ]
                 }, void 0, true, {
@@ -685,21 +768,30 @@ function AnimatedGroupPreset() {
         setSelected(null);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex flex-col items-center w-full",
-        style: {
-            background: '#161819'
-        },
+        className: "flex flex-col items-center w-full py-20 ",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: "text-4xl md:text-5xl font-bold text-center pt-24 text-white",
+                className: "text-4xl md:text-5xl font-bold text-center pt-12 mb-4 text-white px-4 md:px-6",
                 style: {
-                    fontFamily: 'CustomFont, Arial, Helvetica, sans-serif'
+                    fontFamily: 'CustomFont, Arial, Helvetica, sans-serif',
+                    color: '#E82063'
                 },
                 children: "আমাদের হারিয়ে ফেলা ফুল গুলো"
             }, void 0, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
                 lineNumber: 23,
                 columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "text-white text-base mb-6 max-w-[620px] text-center px-4 md:px-12",
+                style: {
+                    fontFamily: 'CustomFont2, Arial, Helvetica, sans-serif'
+                },
+                children: "বাংলাদেশে মুন অ্যালার্ট চালুর আগে কোনো কার্যকর নিখোঁজ শিশু জরুরি নোটিফিকেশন সিস্টেম ছিল না, সেই অভাবের কারণেই আমরা অনেক ছোট ছোট শিশুকে হারিয়েছি ফুলের মতো নিষ্পাপ প্রাণগুলো ঝরে গেছে"
+            }, void 0, false, {
+                fileName: "[project]/app/components/DeadImages.tsx",
+                lineNumber: 26,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$animated$2d$group$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedGroup"], {
                 className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-24 py-8",
@@ -714,14 +806,14 @@ function AnimatedGroupPreset() {
                                 className: "absolute inset-0 w-full h-full object-cover"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/DeadImages.tsx",
-                                lineNumber: 36,
+                                lineNumber: 39,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-[#161819] to-transparent z-10"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/DeadImages.tsx",
-                                lineNumber: 41,
+                                lineNumber: 44,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -732,7 +824,7 @@ function AnimatedGroupPreset() {
                                         children: memory.name
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/DeadImages.tsx",
-                                        lineNumber: 43,
+                                        lineNumber: 46,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -744,13 +836,13 @@ function AnimatedGroupPreset() {
                                         children: memory.dates
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/DeadImages.tsx",
-                                        lineNumber: 44,
+                                        lineNumber: 47,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/DeadImages.tsx",
-                                lineNumber: 42,
+                                lineNumber: 45,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -760,23 +852,23 @@ function AnimatedGroupPreset() {
                                     children: "বিস্তারিত পড়ুন "
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/DeadImages.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 51,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/DeadImages.tsx",
-                                lineNumber: 47,
+                                lineNumber: 50,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, idx, true, {
                         fileName: "[project]/app/components/DeadImages.tsx",
-                        lineNumber: 31,
+                        lineNumber: 34,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 26,
+                lineNumber: 29,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MemoriesModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -786,7 +878,7 @@ function AnimatedGroupPreset() {
                 hidePosterDownload: true
             }, void 0, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 53,
+                lineNumber: 56,
                 columnNumber: 7
             }, this)
         ]
@@ -835,7 +927,7 @@ function AnimatedGroupCustomVariants() {
                 className: "h-auto w-full rounded-[4px]"
             }, void 0, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 87,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -843,7 +935,7 @@ function AnimatedGroupCustomVariants() {
                 className: "h-auto w-full rounded-[4px]"
             }, void 0, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 92,
+                lineNumber: 95,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -851,13 +943,13 @@ function AnimatedGroupCustomVariants() {
                 className: "h-auto w-full rounded-[4px]"
             }, void 0, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 97,
+                lineNumber: 100,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/DeadImages.tsx",
-        lineNumber: 60,
+        lineNumber: 63,
         columnNumber: 5
     }, this);
 }
@@ -900,12 +992,12 @@ function AnimatedGroupCustomVariants2() {
                     className: "h-auto w-full"
                 }, void 0, false, {
                     fileName: "[project]/app/components/DeadImages.tsx",
-                    lineNumber: 141,
+                    lineNumber: 144,
                     columnNumber: 9
                 }, this)
             }, 1, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 140,
+                lineNumber: 143,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -915,12 +1007,12 @@ function AnimatedGroupCustomVariants2() {
                     className: "h-auto w-full"
                 }, void 0, false, {
                     fileName: "[project]/app/components/DeadImages.tsx",
-                    lineNumber: 148,
+                    lineNumber: 151,
                     columnNumber: 9
                 }, this)
             }, 2, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 147,
+                lineNumber: 150,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -930,12 +1022,12 @@ function AnimatedGroupCustomVariants2() {
                     className: "h-auto w-full"
                 }, void 0, false, {
                     fileName: "[project]/app/components/DeadImages.tsx",
-                    lineNumber: 151,
+                    lineNumber: 154,
                     columnNumber: 9
                 }, this)
             }, 3, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 150,
+                lineNumber: 153,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -945,18 +1037,18 @@ function AnimatedGroupCustomVariants2() {
                     className: "h-auto w-full"
                 }, void 0, false, {
                     fileName: "[project]/app/components/DeadImages.tsx",
-                    lineNumber: 158,
+                    lineNumber: 161,
                     columnNumber: 9
                 }, this)
             }, 4, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 157,
+                lineNumber: 160,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/DeadImages.tsx",
-        lineNumber: 109,
+        lineNumber: 112,
         columnNumber: 5
     }, this);
 }
@@ -974,12 +1066,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function HeroSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "relative h-[80vh] w-full flex items-center justify-center overflow-hidden",
+        className: "relative h-[80vh] w-full flex items-center justify-center mb-22 overflow-hidden ",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 w-full h-full",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
-                    className: "absolute top-1/2 left-1/2 w-[100vw] h-[100vh] min-w-[177.77vh] min-h-[56.25vw] -translate-x-1/2 -translate-y-1/2",
+                    className: "absolute top-1/2 left-1/2 w-[100vw] h-[80vh] min-w-[142.216vh] min-h-[45vw] -translate-x-1/2 -translate-y-1/2",
                     src: "https://www.youtube.com/embed/gzv9MHkhcVw?autoplay=1&mute=1&loop=1&playlist=gzv9MHkhcVw&controls=0&showinfo=0&rel=0&modestbranding=1",
                     title: "Background video",
                     allow: "autoplay; encrypted-media",
@@ -995,7 +1087,7 @@ function HeroSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-black/75 z-10"
+                className: "absolute inset-0 bg-black/75 z-10 h-full"
             }, void 0, false, {
                 fileName: "[project]/app/components/HeroSection.tsx",
                 lineNumber: 19,
@@ -1009,10 +1101,24 @@ function HeroSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute top-0 left-0 h-full w-3/4 bg-gradient-to-r from-[#161819] to-transparent z-20 pointer-events-none opacity-40"
+            }, void 0, false, {
+                fileName: "[project]/app/components/HeroSection.tsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute top-0 right-0 h-full w-3/4 bg-gradient-to-l from-[#161819] to-transparent z-20 pointer-events-none opacity-0"
+            }, void 0, false, {
+                fileName: "[project]/app/components/HeroSection.tsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative z-30 text-center text-white flex flex-col items-center px-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-row items-center justify-center gap-8 mb-2",
+                        className: "flex flex-row items-center justify-center gap-8 mb-2 mt-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                 src: "/Nikhoj.svg",
@@ -1020,7 +1126,7 @@ function HeroSection() {
                                 className: "h-38 w-auto"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                lineNumber: 27,
+                                lineNumber: 32,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1033,33 +1139,33 @@ function HeroSection() {
                                     className: "h-16 w-auto"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/HeroSection.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 34,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/HeroSection.tsx",
-                                lineNumber: 28,
+                                lineNumber: 33,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 26,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-6xl font-bold mb-4",
+                        className: "text-6xl font-bold mb-4  md:px-4 leading-relaxed",
                         style: {
                             fontFamily: 'CustomFont, Arial, Helvetica, sans-serif'
                         },
                         children: "প্রত্যেক নিখোঁজের জন্য"
                     }, void 0, false, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 32,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-6xl font-bold mb-4",
+                        className: "text-6xl font-bold mb-4 md:px-4 ",
                         style: {
                             fontFamily: 'CustomFont, Arial, Helvetica, sans-serif',
                             color: '#E82063'
@@ -1067,15 +1173,18 @@ function HeroSection() {
                         children: "একত্রিত হই"
                     }, void 0, false, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 38,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-lg",
+                        className: "text-lg mb-2",
+                        style: {
+                            fontFamily: 'CustomFont2, Arial, Helvetica, sans-serif'
+                        },
                         children: "Every Child Matters"
                     }, void 0, false, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 44,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1090,6 +1199,7 @@ function HeroSection() {
                                 color: '#E82063',
                                 padding: '0.75rem 2rem',
                                 borderRadius: '0.5rem',
+                                marginBottom: '4rem',
                                 fontSize: '1.25rem',
                                 fontWeight: 700,
                                 cursor: 'pointer',
@@ -1107,18 +1217,18 @@ function HeroSection() {
                             children: "নিখোঁজ রিপোর্ট করুন"
                         }, void 0, false, {
                             fileName: "[project]/app/components/HeroSection.tsx",
-                            lineNumber: 51,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 45,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/HeroSection.tsx",
-                lineNumber: 25,
+                lineNumber: 29,
                 columnNumber: 7
             }, this)
         ]
@@ -1321,7 +1431,11 @@ const memories = [
 আপনি যদি সকালকে দেখে থাকেন বা কোনো তথ্য জানেন, দয়া করে যোগাযোগ করুন এবং সাহায্য করুন।
 একটি ছোট্ট সহানুভূতি, একটি শেয়ার, হয়তো তাদের হারানো সন্তানকে ফিরিয়ে আনতে পারে।`,
         posterLink: "https://drive.google.com/file/d/1bVCETzKEBvhr5vztXWGspak9r8Jsnq6h/view?usp=sharing",
-        videoLink: "https://www.youtube.com/watch?v=AKbWPDvgPVo&list=PPSV"
+        videoLink: "https://www.youtube.com/embed/AKbWPDvgPVo?si=PD1rKxjc6TftYSBK",
+        image1: "/sokal_images/sokal2.webp",
+        image2: "/sokal_images/sokal3.webp",
+        image3: "/sokal_images/sokal4.webp",
+        image4: "/sokal_images/sokal5.webp"
     },
     {
         name: "আবদুল্লাহ তামিম",
@@ -1336,6 +1450,25 @@ const memories = [
 এরপরও থেমে থাকেনি চেষ্টা। ফুটবল ম্যাচে প্ল্যাকার্ড প্রদর্শনের মাধ্যমে, সামাজিক যোগাযোগমাধ্যমে ছবি ও বার্তা ছড়িয়ে দিয়ে তামিমের সন্ধানের আহ্বান জানানো হয়েছে। তবুও জুন ২০২৫–এর পর তার অবস্থান সম্পর্কে কোনো নিশ্চিত সরকারি বা সংবাদমাধ্যমের তথ্য সামনে আসেনি।
 তামিম আজও নিখোঁজ। আর তার পরিবার আজও অপেক্ষায়—একটি সকাল, একটি দরজা খোলার শব্দ, কিংবা শুধু একটি খবরের আশায়। যতদিন সে ফিরে না আসে, এই অপেক্ষা শেষ হবে না।?`,
         posterLink: "https://drive.google.com/file/d/1WE8tcAwQot1wqgNTgOXzFc2TGZqX73SQ/view?usp=sharing",
+        videoLink: ""
+    },
+    {
+        name: "খাদিজা মায়া",
+        seat: "ঢাকা-১৮ আসন",
+        dates: "১১ এপ্রিল, ২০২১",
+        image_src: {
+            small: khadizaMaya,
+            large: khadizaMaya
+        },
+        story: `চাঁদপুরের শাহরাস্তি থানার ছোটতুলা গ্রামে থাকত পাঁচ বছরের ছোট্ট মেয়েটি খাদিজা আক্তার। বাবার নাম সাব্বির হোসেন (আব্দুল্লাহ), মায়ের নাম ফাতেমা আক্তার।
+১১ এপ্রিল ২০২১, সকাল প্রায় ১১টা ৩০ মিনিটে, সে প্রতিদিনের মতো বাড়ির পাশের বাড়িতে খেলতে যায়। কিন্তু সেদিন আর ফিরে আসেনি।
+খোঁজ করা হয় চারপাশে, গ্রামের অলিগলিতে, পুকুরপাড়ে—কিন্তু কোথাও পাওয়া যায়নি তাকে। মুহূর্তেই আনন্দের বাড়ি নেমে আসে গভীর শূন্যতায়।
+আজও সেই বাড়িতে অপেক্ষা থেমে নেই।
+মায়ের চোখে জল, বাবার বুকে একটাই আশা—
+কোনো একদিন খাদিজা ফিরে আসবে।
+এটি কোনো গল্প নয়, এটি একটি নিখোঁজ শিশুর বাস্তব কাহিনি।
+একটু সহানুভূতি, একটু সাহায্য—হয়তো একটি শিশুকে ঘরে ফিরিয়ে দিতে পারে।`,
+        posterLink: "https://drive.google.com/file/d/1P-5wN7s77smyspjEg3QjpXCpPIesrxB9/view?usp=sharing",
         videoLink: ""
     },
     {
@@ -1385,25 +1518,6 @@ const memories = [
         story: `২০২৪ সালের ১ নভেম্বর, শুক্রবার বিকেল ৫টার সেই অভিশপ্ত মুহূর্তটি পুরো পরিবারের আকাশ থেকে সবটুকু আলো কেড়ে নিয়েছে। গাজীপুরের সালনা বন বিভাগের সরকারি কোয়ার্টারের যে আঙিনায় একটু আগেও ৫ বছরের ছোট্ট ইকরা ইসলাম হেসে-খেলে বেড়াচ্ছিল, মুহূর্তের ব্যবধানে সেই আঙিনা আজ এক নিস্তব্ধ হাহাকারে পরিণত হয়েছে। ইকরা শুধু আমাদের একটি সন্তান নয়, সে আমাদের পরিবারের প্রাণ।
   তার সেই চঞ্চলতা, ফর্সা গায়ের রঙের মায়াবী চেহারা আর আধো-আধো বুলি ছাড়া আমাদের প্রতিটি সেকেন্ড কাটছে অসহ্য যন্ত্রণায়। মাত্র ৩ ফুট উচ্চতার এই ছোট্ট মানুষটি ছাড়া আমাদের ঘর আজ মরুভূমির মতো খাঁ খাঁ করছে। ওর মা-বাবার চোখের জল আর থামছে না, প্রতিটি পায়ের শব্দে তারা ভাবছেন—এই বুঝি ইকরা ফিরে এলো!`,
         posterLink: "https://drive.google.com/file/d/1NVvB3HBFGz-BYt4NQDz2mnj_OcweTK_s/view?usp=sharing",
-        videoLink: ""
-    },
-    {
-        name: "খাদিজা মায়া",
-        seat: "ঢাকা-১৮ আসন",
-        dates: "১১ এপ্রিল, ২০২১",
-        image_src: {
-            small: khadizaMaya,
-            large: khadizaMaya
-        },
-        story: `চাঁদপুরের শাহরাস্তি থানার ছোটতুলা গ্রামে থাকত পাঁচ বছরের ছোট্ট মেয়েটি খাদিজা আক্তার। বাবার নাম সাব্বির হোসেন (আব্দুল্লাহ), মায়ের নাম ফাতেমা আক্তার।
-১১ এপ্রিল ২০২১, সকাল প্রায় ১১টা ৩০ মিনিটে, সে প্রতিদিনের মতো বাড়ির পাশের বাড়িতে খেলতে যায়। কিন্তু সেদিন আর ফিরে আসেনি।
-খোঁজ করা হয় চারপাশে, গ্রামের অলিগলিতে, পুকুরপাড়ে—কিন্তু কোথাও পাওয়া যায়নি তাকে। মুহূর্তেই আনন্দের বাড়ি নেমে আসে গভীর শূন্যতায়।
-আজও সেই বাড়িতে অপেক্ষা থেমে নেই।
-মায়ের চোখে জল, বাবার বুকে একটাই আশা—
-কোনো একদিন খাদিজা ফিরে আসবে।
-এটি কোনো গল্প নয়, এটি একটি নিখোঁজ শিশুর বাস্তব কাহিনি।
-একটু সহানুভূতি, একটু সাহায্য—হয়তো একটি শিশুকে ঘরে ফিরিয়ে দিতে পারে।`,
-        posterLink: "https://drive.google.com/file/d/1P-5wN7s77smyspjEg3QjpXCpPIesrxB9/view?usp=sharing",
         videoLink: ""
     },
     {
@@ -1567,7 +1681,7 @@ function Memories() {
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-4xl md:text-5xl font-bold text-center mt-24 mb-12 text-white",
+                        className: "text-4xl md:text-5xl font-bold text-center mt-12 mb-4 text-white px-4 md:px-6",
                         style: {
                             fontFamily: 'CustomFont, Arial, Helvetica, sans-serif',
                             color: '#E82063'
@@ -1577,6 +1691,17 @@ function Memories() {
                         fileName: "[project]/src/components/Memories.tsx",
                         lineNumber: 31,
                         columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-base max-w-xl mx-auto text-center mb-6 text-white px-4 md:px-12",
+                        style: {
+                            fontFamily: 'CustomFont2, Arial, Helvetica, sans-serif'
+                        },
+                        children: "চলুন, আমরা সবাই একসঙ্গে কাজ করি যেসব শিশু এখনো নিখোঁজ রয়েছে, তাদের নিরাপদে ঘরে ফিরিয়ে আনার জন্য।"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Memories.tsx",
+                        lineNumber: 35,
+                        columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-12 gap-4",
@@ -1588,12 +1713,12 @@ function Memories() {
                                 }
                             }, idx, false, {
                                 fileName: "[project]/src/components/Memories.tsx",
-                                lineNumber: 36,
+                                lineNumber: 42,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/Memories.tsx",
-                        lineNumber: 34,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1611,7 +1736,7 @@ function Memories() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/Memories.tsx",
-                lineNumber: 47,
+                lineNumber: 53,
                 columnNumber: 7
             }, this)
         ]

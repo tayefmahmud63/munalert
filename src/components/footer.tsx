@@ -36,7 +36,7 @@ export default function Footer() {
 
         {/* Center Logo */}
         <div className="flex justify-center flex-1">
-          <img src={partner} alt="Partner Logo" className="h-40 w-auto" />
+          <img src={typeof partner === 'string' ? partner : partner.src} alt="Partner Logo" className="h-40 w-auto" />
         </div>
 
         {/* Right - Contact */}

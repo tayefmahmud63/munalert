@@ -47,7 +47,11 @@ export const memories = [
 
 
 posterLink:"https://drive.google.com/file/d/1bVCETzKEBvhr5vztXWGspak9r8Jsnq6h/view?usp=sharing",
-videoLink:"https://www.youtube.com/watch?v=AKbWPDvgPVo&list=PPSV",
+videoLink:"https://www.youtube.com/embed/AKbWPDvgPVo?si=PD1rKxjc6TftYSBK",
+image1:"/sokal_images/sokal2.webp",
+image2:"/sokal_images/sokal3.webp",
+image3:"/sokal_images/sokal4.webp",
+image4:"/sokal_images/sokal5.webp",
 },  
 
 {
@@ -66,6 +70,25 @@ posterLink:"https://drive.google.com/file/d/1WE8tcAwQot1wqgNTgOXzFc2TGZqX73SQ/vi
 videoLink:"",
 },  
 
+{
+  name: "খাদিজা মায়া",
+  seat: "ঢাকা-১৮ আসন",
+  dates: "১১ এপ্রিল, ২০২১",
+  image_src: {
+    small: khadizaMaya,
+    large: khadizaMaya,
+  },
+  story: `চাঁদপুরের শাহরাস্তি থানার ছোটতুলা গ্রামে থাকত পাঁচ বছরের ছোট্ট মেয়েটি খাদিজা আক্তার। বাবার নাম সাব্বির হোসেন (আব্দুল্লাহ), মায়ের নাম ফাতেমা আক্তার।
+১১ এপ্রিল ২০২১, সকাল প্রায় ১১টা ৩০ মিনিটে, সে প্রতিদিনের মতো বাড়ির পাশের বাড়িতে খেলতে যায়। কিন্তু সেদিন আর ফিরে আসেনি।
+খোঁজ করা হয় চারপাশে, গ্রামের অলিগলিতে, পুকুরপাড়ে—কিন্তু কোথাও পাওয়া যায়নি তাকে। মুহূর্তেই আনন্দের বাড়ি নেমে আসে গভীর শূন্যতায়।
+আজও সেই বাড়িতে অপেক্ষা থেমে নেই।
+মায়ের চোখে জল, বাবার বুকে একটাই আশা—
+কোনো একদিন খাদিজা ফিরে আসবে।
+এটি কোনো গল্প নয়, এটি একটি নিখোঁজ শিশুর বাস্তব কাহিনি।
+একটু সহানুভূতি, একটু সাহায্য—হয়তো একটি শিশুকে ঘরে ফিরিয়ে দিতে পারে।`,
+posterLink:"https://drive.google.com/file/d/1P-5wN7s77smyspjEg3QjpXCpPIesrxB9/view?usp=sharing",
+videoLink:"",
+},
 
 
 
@@ -123,25 +146,6 @@ videoLink:"",
   videoLink:"",
 },
 
-{
-  name: "খাদিজা মায়া",
-  seat: "ঢাকা-১৮ আসন",
-  dates: "১১ এপ্রিল, ২০২১",
-  image_src: {
-    small: khadizaMaya,
-    large: khadizaMaya,
-  },
-  story: `চাঁদপুরের শাহরাস্তি থানার ছোটতুলা গ্রামে থাকত পাঁচ বছরের ছোট্ট মেয়েটি খাদিজা আক্তার। বাবার নাম সাব্বির হোসেন (আব্দুল্লাহ), মায়ের নাম ফাতেমা আক্তার।
-১১ এপ্রিল ২০২১, সকাল প্রায় ১১টা ৩০ মিনিটে, সে প্রতিদিনের মতো বাড়ির পাশের বাড়িতে খেলতে যায়। কিন্তু সেদিন আর ফিরে আসেনি।
-খোঁজ করা হয় চারপাশে, গ্রামের অলিগলিতে, পুকুরপাড়ে—কিন্তু কোথাও পাওয়া যায়নি তাকে। মুহূর্তেই আনন্দের বাড়ি নেমে আসে গভীর শূন্যতায়।
-আজও সেই বাড়িতে অপেক্ষা থেমে নেই।
-মায়ের চোখে জল, বাবার বুকে একটাই আশা—
-কোনো একদিন খাদিজা ফিরে আসবে।
-এটি কোনো গল্প নয়, এটি একটি নিখোঁজ শিশুর বাস্তব কাহিনি।
-একটু সহানুভূতি, একটু সাহায্য—হয়তো একটি শিশুকে ঘরে ফিরিয়ে দিতে পারে।`,
-posterLink:"https://drive.google.com/file/d/1P-5wN7s77smyspjEg3QjpXCpPIesrxB9/view?usp=sharing",
-videoLink:"",
-},
 
 
 {

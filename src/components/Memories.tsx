@@ -28,9 +28,15 @@ export default function Memories() {
   return (
     <>
       <div className="w-full lg:container px-6 mx-auto" style={{ background: '#161819', minHeight: '100vh' }}>
-        <h1 className="text-4xl md:text-5xl font-bold text-center mt-24 mb-12 text-white" style={{ fontFamily: 'CustomFont, Arial, Helvetica, sans-serif', color: '#E82063' }}>
+        <h1 className="text-4xl md:text-5xl font-bold text-center mt-12 mb-4 text-white px-4 md:px-6" style={{ fontFamily: 'CustomFont, Arial, Helvetica, sans-serif', color: '#E82063' }}>
           নিখোঁজ শিশুদের তালিকা
+
         </h1>
+      <p className="text-base max-w-xl mx-auto text-center mb-6 text-white px-4 md:px-12" style={{ fontFamily: 'CustomFont2, Arial, Helvetica, sans-serif',  }}>
+					চলুন, আমরা সবাই একসঙ্গে কাজ করি যেসব শিশু এখনো নিখোঁজ রয়েছে, তাদের নিরাপদে ঘরে ফিরিয়ে আনার জন্য।
+
+					</p>
+       
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-12 gap-4">
           {memories.map((memory, idx) => (
             <Memory

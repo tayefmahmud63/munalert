@@ -16,7 +16,7 @@ export default function Newsletter() {
           required
           placeholder="আপনার ইমেইল ঠিকানা"
             className="px-4 py-3 rounded-lg border border-[#E82063] focus:border-[#ea477e] outline-none text-white opacity-30 placeholder-white"
-          style={{ '::placeholder': { color: 'white' } }}
+          style={{   color: 'white' }}
         />
         <button
           type="submit"
