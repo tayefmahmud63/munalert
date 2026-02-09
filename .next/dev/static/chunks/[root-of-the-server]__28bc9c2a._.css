@@ -667,6 +667,10 @@
     display: none;
   }
 
+  .inline-block {
+    display: inline-block;
+  }
+
   .aspect-\[3\/4\] {
     aspect-ratio: 3 / 4;
   }

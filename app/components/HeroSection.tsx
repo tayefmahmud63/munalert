@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 export default function HeroSection() {
@@ -41,6 +42,38 @@ export default function HeroSection() {
           একত্রিত হই
         </h1>
         <p className="text-lg">Every Child Matters</p>
+        <a
+          href="https://munalert.org/report-missing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-block"
+        >
+          <button
+            style={{
+              border: '2px solid #E82063',
+              background: 'transparent',
+              color: '#E82063',
+              padding: '0.75rem 2rem',
+              borderRadius: '0.5rem',
+              fontSize: '1.25rem',
+              fontWeight: 700,
+              cursor: 'pointer',
+              fontFamily: 'CustomFont, Arial, Helvetica, sans-serif',
+              transition: 'background 0.2s, color 0.2s',
+            }}
+            onMouseOver={e => {
+              e.currentTarget.style.background = '#E82063';
+              e.currentTarget.style.color = '#fff';
+            }}
+            onMouseOut={e => {
+              e.currentTarget.style.background = 'transparent';
+              e.currentTarget.style.color = '#E82063';
+            }}
+          >
+            নিখোঁজ রিপোর্ট করুন
+          </button>
+        </a>
+        
       </div>
     </div>
   );

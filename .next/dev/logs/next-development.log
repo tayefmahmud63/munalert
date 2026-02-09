@@ -4,3 +4,18 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
 [00:00:02.125] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:00:02.135] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:00:06.656] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:30.814] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:49.324] Server  ERROR   ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button style={{...}} onMouseOver={function onMouseOver} onMouseOut=... children=...>
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:13:49.445] Server  ERROR   ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button style={{...}} onMouseOver=... onMouseOut={function onMouseOut} children=...>
+                                                   ^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:13:50.456] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button style={{...}} onMouseOver={function onMouseOver} onMouseOut=... children=...>
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:15:28.155] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:28.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
