@@ -1,0 +1,1456 @@
+module.exports = [
+"[externals]/next/dist/compiled/next-server/app-page-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-page-turbo.runtime.dev.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/compiled/next-server/app-page-turbo.runtime.dev.js", () => require("next/dist/compiled/next-server/app-page-turbo.runtime.dev.js"));
+
+module.exports = mod;
+}),
+"[project]/lib/utils.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "cn",
+    ()=>cn
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/tailwind-merge/dist/bundle-mjs.mjs [app-ssr] (ecmascript)");
+;
+;
+function cn(...inputs) {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["twMerge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(inputs));
+}
+}),
+"[project]/components/ui/animated-group.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "AnimatedGroup",
+    ()=>AnimatedGroup
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+'use client';
+;
+;
+;
+;
+const defaultContainerVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1
+        }
+    }
+};
+const defaultItemVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1
+    }
+};
+const presetVariants = {
+    fade: {
+        container: defaultContainerVariants,
+        item: {
+            hidden: {
+                opacity: 0
+            },
+            visible: {
+                opacity: 1
+            }
+        }
+    },
+    slide: {
+        container: defaultContainerVariants,
+        item: {
+            hidden: {
+                opacity: 0,
+                y: 20
+            },
+            visible: {
+                opacity: 1,
+                y: 0
+            }
+        }
+    },
+    scale: {
+        container: defaultContainerVariants,
+        item: {
+            hidden: {
+                opacity: 0,
+                scale: 0.8
+            },
+            visible: {
+                opacity: 1,
+                scale: 1
+            }
+        }
+    },
+    blur: {
+        container: defaultContainerVariants,
+        item: {
+            hidden: {
+                opacity: 0,
+                filter: 'blur(4px)'
+            },
+            visible: {
+                opacity: 1,
+                filter: 'blur(0px)'
+            }
+        }
+    },
+    'blur-slide': {
+        container: defaultContainerVariants,
+        item: {
+            hidden: {
+                opacity: 0,
+                filter: 'blur(4px)',
+                y: 20
+            },
+            visible: {
+                opacity: 1,
+                filter: 'blur(0px)',
+                y: 0
+            }
+        }
+    },
+    zoom: {
+        container: defaultContainerVariants,
+        item: {
+            hidden: {
+                opacity: 0,
+                scale: 0.5
+            },
+            visible: {
+                opacity: 1,
+                scale: 1,
+                transition: {
+                    type: 'spring',
+                    stiffness: 300,
+                    damping: 20
+                }
+            }
+        }
+    },
+    flip: {
+        container: defaultContainerVariants,
+        item: {
+            hidden: {
+                opacity: 0,
+                rotateX: -90
+            },
+            visible: {
+                opacity: 1,
+                rotateX: 0,
+                transition: {
+                    type: 'spring',
+                    stiffness: 300,
+                    damping: 20
+                }
+            }
+        }
+    },
+    bounce: {
+        container: defaultContainerVariants,
+        item: {
+            hidden: {
+                opacity: 0,
+                y: -50
+            },
+            visible: {
+                opacity: 1,
+                y: 0,
+                transition: {
+                    type: 'spring',
+                    stiffness: 400,
+                    damping: 10
+                }
+            }
+        }
+    },
+    rotate: {
+        container: defaultContainerVariants,
+        item: {
+            hidden: {
+                opacity: 0,
+                rotate: -180
+            },
+            visible: {
+                opacity: 1,
+                rotate: 0,
+                transition: {
+                    type: 'spring',
+                    stiffness: 200,
+                    damping: 15
+                }
+            }
+        }
+    },
+    swing: {
+        container: defaultContainerVariants,
+        item: {
+            hidden: {
+                opacity: 0,
+                rotate: -10
+            },
+            visible: {
+                opacity: 1,
+                rotate: 0,
+                transition: {
+                    type: 'spring',
+                    stiffness: 300,
+                    damping: 8
+                }
+            }
+        }
+    }
+};
+function AnimatedGroup({ children, className, variants, preset }) {
+    const selectedVariants = preset ? presetVariants[preset] : {
+        container: defaultContainerVariants,
+        item: defaultItemVariants
+    };
+    const containerVariants = variants?.container || selectedVariants.container;
+    const itemVariants = variants?.item || selectedVariants.item;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+        initial: "hidden",
+        animate: "visible",
+        variants: containerVariants,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])(className),
+        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].Children.map(children, (child, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                variants: itemVariants,
+                children: child
+            }, index, false, {
+                fileName: "[project]/components/ui/animated-group.tsx",
+                lineNumber: 160,
+                columnNumber: 9
+            }, this))
+    }, void 0, false, {
+        fileName: "[project]/components/ui/animated-group.tsx",
+        lineNumber: 153,
+        columnNumber: 5
+    }, this);
+}
+;
+}),
+"[project]/app/utils/deadImagesData.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "deadImagesData",
+    ()=>deadImagesData
+]);
+const deadImagesData = [
+    {
+        name: "নাশিত",
+        dates: "১২  ডিসেম্বর , ২০২৪",
+        image_src: {
+            large: "/slider_images/1.webp"
+        },
+        story: `নাশিত ছিল একজন মেধাবী ছাত্র, যে স্কুলে যেতে ভালোবাসত। তার ছোট্ট পৃথিবী ছিল বই, খেলাধুলা, আর বন্ধুদের সাথে কাটানো মজার সময়। কিন্তু একদিন স্কুল থেকে ফেরার পথে এক অপ্রত্যাশিত ঘটনা তার জীবন ও তার পরিবারের সব আনন্দ চিরতরে কেড়ে নেয়। তাকে অপহরণ করা হয়।
+পাষাণ অপহরণকারীরা তার পরিবারের কাছে মুক্তিপণ দাবি করেছিল, কিন্তু সেই টাকা না পেয়ে এবং ধরা পড়ার ভয়ে তারা নাশিতের ওপর অমানুষিক নিষ্ঠুরতা চালায়। একটি নিষ্পাপ প্রাণ অকালে ঝরে যায়, যা পুরো এলাকায় শোকের ছায়া নামিয়ে আনে। নাশিতের এই গল্পটি আমাদের মনে করিয়ে দেয় যে, পৃথিবীতে এখনো কতটা অন্ধকার লুকিয়ে আছে, যেখানে লোভ মানুষের ভেতরের পশুত্বকে জাগিয়ে তোলে।
+দীর্ঘ প্রতীক্ষার পর বিচার:
+অবশেষে আইনের শাসন প্রতিষ্ঠিত হয়েছে। নাশিত হত্যার দায়ে সম্প্রতি আদালত তার খুনিদের কঠোর শাস্তি প্রদান করেছে। মূল অপরাধীদের মৃত্যুদণ্ড (ফাঁসি) এবং সহযোগীদের যাবজ্জীবন কারাদণ্ড দেওয়া হয়েছে।
+এই রায় হয়তো নাশিতকে আর ফিরিয়ে দেবে না, কিন্তু এটি একটি বার্তা দেয় যে—অবিচার ও নিষ্ঠুরতার শেষ পরিণাম অন্ধকার। নাশিতের আত্মা শান্তিতে থাকুক, আর কোনো মায়ের বুক যেন এভাবে খালি না হয়।
+`,
+        videoLink: "https://www.youtube.com/watch?v=BMBY32B7JkU"
+    },
+    {
+        name: "মুনতাহা",
+        dates: "৩ নভেম্বর, ২০২৪",
+        image_src: {
+            large: "/slider_images/2.webp"
+        },
+        story: `সিলেটের কানাইঘাট উপজেলার নিভৃত পল্লীর এক চঞ্চল প্রাণের নাম ছিল মুনতাহা আক্তার জেরিন। মাত্র ছয় বছর বয়সী এই শিশুটির চোখে ছিল রাজ্যের স্বপ্ন আর মুখে সারাক্ষণ লেগে থাকত এক মায়াবী হাসি। গত ৩ নভেম্বর ২০২৪, প্রতিদিনের মতোই বাড়ির সামনে খেলতে গিয়েছিল সে। কিন্তু সেই খেলাই যে তার জীবনের শেষ খেলা হবে, তা কারোরই কল্পনাতে ছিল না। বিকেল গড়িয়ে সন্ধ্যা নামলেও যখন মুনতাহা ঘরে ফিরল না, তখন থেকেই শুরু হয় এক দুঃসহ উৎকণ্ঠা।
+পরিবারের লোকজন এবং এলাকাবাসী হন্যে হয়ে পুরো গ্রাম তন্নতন্ন করে খুঁজেও তার কোনো হদিস পাচ্ছিল না। সামাজিক যোগাযোগ মাধ্যমে মুনতাহার সেই মায়াবী ছবি ছড়িয়ে পড়ে, পুরো দেশ প্রার্থনা করতে থাকে যেন শিশুটি অক্ষত অবস্থায় ফিরে আসে। কিন্তু সাত দিন পর, ১০ নভেম্বর ভোরে সব আশার প্রদীপ নিভে যায়। বাড়ির পাশের একটি পুকুরে কাদার নিচে পুতে রাখা অবস্থায় উদ্ধার করা হয় তার নিথর দেহ। এই ঘটনা পুরো এলাকায় শোকের ছায়া নেমে আসে এবং জনমনে ক্ষোভ সৃষ্টি করে।
+`,
+        videoLink: "https://www.youtube.com/watch?v=fOZ8eBS92sk"
+    },
+    {
+        name: "সাফওয়ান",
+        dates: "১৫ জানুয়ারী, ২০২৫",
+        image_src: {
+            large: "/slider_images/3.webp"
+        },
+        story: `বরিশালের গৌরনদী উপজেলার সরিকল ইউনিয়নের হোসনাবাদ গ্রাম—শান্ত, চেনা এক গ্রাম। কয়েক দিন আগে সেখানে দাদাবাড়িতে বেড়াতে আসে সাত বছরের ছোট্ট সাফওয়ান। ঢাকার ব্যস্ত জীবন থেকে দূরে, গ্রামের উঠোনে খেলাধুলা আর সমবয়সী বন্ধুদের সঙ্গে সময় কাটানোর আনন্দেই ছিল তার দিনগুলো।
+
+বুধবার দুপুরে সাফওয়ান পাশের বাড়ির কয়েকজন শিশুর সঙ্গে খেলতে যায়। খেলতে খেলতেই সময় গড়িয়ে যায়, কিন্তু বিকেল পেরিয়ে সন্ধ্যা নামলেও সে আর বাড়ি ফেরে না। শুরু হয় খোঁজাখুঁজি—বাড়ির উঠোন, আশপাশের গলি, প্রতিবেশীদের বাড়ি—সব জায়গায়। কোথাও তার দেখা নেই।
+
+রাত বাড়তে থাকে, উদ্বেগ বাড়ে স্বজনদের মনে। অবশেষে সাফওয়ানের দাদা আবদুল বারেক সিকদার গৌরনদী মডেল থানায় একটি সাধারণ ডায়েরি করেন। গ্রামের মানুষও ছড়িয়ে পড়ে খোঁজে। সবাই আশা করছিল, হয়তো কোথাও ঘুমিয়ে পড়েছে, হয়তো সকাল হলে ফিরে আসবে।
+
+কিন্তু বৃহস্পতিবার ভোরে সেই আশা ভেঙে যায়।
+
+ভোর ছয়টার দিকে স্থানীয়রা মান্না ব্যাপারীর ভবনের পেছনের একটি ডোবার কাছে ভিড় করতে দেখেন। ডোবার পানিতে ভাসছে একটি ছোট্ট নিথর দেহ। খবর পেয়ে পুলিশ এসে লাশ উদ্ধার করে। তখনই নিশ্চিত হয়—নিখোঁজ সেই শিশুই সাফওয়ান।
+
+পুলিশ জানায়, শিশুটির চোখ ও কানের নিচে আঘাতের চিহ্ন পাওয়া গেছে। প্রাথমিকভাবে ধারণা করা হচ্ছে, তাকে হত্যা করে লাশ ডোবায় ফেলে রাখা হয়েছে। ময়নাতদন্তের জন্য লাশ পাঠানো হয়েছে বরিশাল শের-ই-বাংলা মেডিকেল কলেজ হাসপাতালের মর্গে।
+
+এই ঘটনার পর গ্রামে চাপা ক্ষোভ আর শোক নেমে আসে। স্বজনদের অভিযোগ, জমির সীমানা নিয়ে দীর্ঘদিনের বিরোধের জের ধরে এই নির্মম ঘটনা ঘটতে পারে। ঘটনার সঙ্গে জড়িত সন্দেহে একই বাড়ির রোমান চৌধুরী (২৮) এবং প্রতিবেশী ইউপি সদস্য মোজাম্মেল হককে (৫২) আটক করেছে পুলিশ।
+
+ঢাকায় কর্মরত ট্রান্সকম গ্রুপের কর্মকর্তা ইমরান হোসেন সিকদারের ছেলে সাফওয়ান—যে শুধু দাদাবাড়িতে বেড়াতে এসেছিল, তার গল্প শেষ হলো খুব নিষ্ঠুরভাবে।
+
+`,
+        videoLink: "https://www.youtube.com/watch?v=4cTxilCMkfQ"
+    },
+    {
+        name: "মোঃ রিয়ান",
+        dates: "৩ জুন, ২০২৫",
+        image_src: {
+            large: "/slider_images/4.webp"
+        },
+        story: `ময়মনসিংহের ত্রিশাল উপজেলার কাঁঠাল তেতুলিয়া পাড়ায় এক চঞ্চল শিশুর ছোট্ট জীবন হঠাৎ থমকে গেল। ছয় বছর বয়সী মোঃ রিয়ান, বাবা মোঃ হাবিবুল্লাহর নয়নের মণি, ৩ জুন ২০২৫ দুপুর ১টার দিকে মিলন বাজার এলাকা থেকে নিখোঁজ হয়ে যায়। রিয়ানের ছোট্ট মনটা হয়তো খেলা, দৌড়ঝাঁপ আর নতুন নতুন আবিষ্কারের আনন্দে ভরা ছিল, কিন্তু তার খোঁজ পাওয়ার চেষ্টা তার পরিবারকে এক অভিশপ্ত আতঙ্কে ফেলেছিল।
+বাবা-মা পাগলের মতো খুঁজতে থাকেন, প্রতিবেশী, বন্ধুবান্ধব, এমনকি সামাজিক যোগাযোগ মাধ্যমও রিয়ানকে ফিরে পাওয়ার আকুতি দিয়ে ভরে ওঠে। একটাই প্রার্থনা—নির্দোষ শিশুটি যেন নিরাপদে ফিরে আসে। বিজ্ঞপ্তিতে লেখা হয়েছিল, কেউ যদি রিয়ানকে খুঁজে পায়, সে যেন দক্ষিণ তেতুলিয়া পাড়ার ইদ্রিস আলী মাস্টারের বাড়িতে পৌঁছে দেয়।
+কিন্তু সময় কাটার সঙ্গে সঙ্গে উৎকণ্ঠা আরও বাড়ে। এবং এক ভোরে, সেই ছোট্ট আলো নিভে যায়—রিয়ানকে মৃত অবস্থায় উদ্ধার করা হয় বাড়ির পাশে পুকুর থেকে।
+পুরো এলাকা স্তব্ধ, শোকের ছায়ায় ঢেকে যায়। বাবা-মার চোখে আর কোনো আশার আলো নেই, আর প্রতিবেশীদের হৃদয় ভেঙে যায় এই ছোট্ট প্রাণের শেষ বিদায়ে। রিয়ানের হাসি, তার ছোট্ট চঞ্চলতা, তার ছোট্ট কথাগুলো—সবই এখন স্মৃতির পাতায় সীমাবদ্ধ।
+এ ঘটনা আমাদের সবাইকে মনে করিয়ে দেয়, কতটা জরুরি শিশুদের প্রতি সতর্ক থাকা এবং তাদের নিরাপত্তা নিশ্চিত করা। রিয়ানের ছোট্ট জীবন হায়াতের এক মুল্যবান শিক্ষা রেখে চলে গেছে—যে শিক্ষা আমাদের কখনও ভুলে যাওয়া উচিত নয়।
+`
+    }
+];
+}),
+"[project]/src/components/MemoriesModal.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>MemoriesModal
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+;
+;
+;
+function MemoriesModal({ isVisible, selected, handleClose, hidePosterDownload = false }) {
+    const [copied, setCopied] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const firstName = selected?.name.split(" ").at(0);
+    const story = selected?.story;
+    const match = story?.match(/\n\n\*(–.*?)\*$/);
+    let mainText = story;
+    let authorText = null;
+    if (match) {
+        authorText = match[1];
+        mainText = story?.replace(/\n\n\*(–.*?)\*$/, "");
+    }
+    const handleShare = async ()=>{
+        if (!selected?.name) return;
+        const shareLink = `${window.location.origin}/#${selected.name.replace(/\s+/g, "-")}`;
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: selected.name,
+                    text: selected.story,
+                    url: shareLink
+                });
+            } catch (err) {
+            // User cancelled or error
+            }
+        } else {
+            await navigator.clipboard.writeText(shareLink);
+            setCopied(true);
+            setTimeout(()=>setCopied(false), 2500);
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+        children: isVisible && selected && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+            className: "fixed inset-0 bg-[#212121] overflow-y-auto z-[100]",
+            initial: {
+                y: "100%",
+                opacity: 0
+            },
+            animate: {
+                y: 0,
+                opacity: 1
+            },
+            exit: {
+                y: "100%",
+                opacity: 0
+            },
+            transition: {
+                duration: 0.4,
+                ease: "easeInOut"
+            },
+            onClick: handleClose,
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "sticky z-10 top-0 left-0 right-0 p-6 md:p-9 flex justify-end gap-3.5 bg-[#212121]/80 backdrop-blur-sm",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: handleClose,
+                        className: "bg-[#ffffffcc] hover:bg-[#C8E4C2] active:bg-[#C8E4C2] rounded-full text-black cursor-pointer p-3 transition-all",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                            width: "17",
+                            height: "17",
+                            viewBox: "0 0 16 16",
+                            fill: "none",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "M11.25 4.75L4.75 11.25M4.75 4.75L11.25 11.25",
+                                stroke: "black",
+                                strokeWidth: "1.5",
+                                strokeLinecap: "round",
+                                strokeLinejoin: "round"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/MemoriesModal.tsx",
+                                lineNumber: 75,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                            lineNumber: 74,
+                            columnNumber: 15
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/MemoriesModal.tsx",
+                        lineNumber: 70,
+                        columnNumber: 13
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/MemoriesModal.tsx",
+                    lineNumber: 68,
+                    columnNumber: 11
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "w-full px-6 lg:container mx-auto",
+                    onClick: (e)=>e.stopPropagation(),
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "md:hidden mt-6",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-2xl font-bethany mb-1 text-white",
+                                    children: selected.name
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/MemoriesModal.tsx",
+                                    lineNumber: 87,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "mb-2 text-white text-sm",
+                                    children: selected.dates
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/MemoriesModal.tsx",
+                                    lineNumber: 88,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                            lineNumber: 86,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col md:flex-row items-center px-48 py-24 justify-center gap-2 md:gap-2  text-center",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex-shrink-0 w-full md:w-64 lg:w-72 sticky md:relative flex justify-center",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "relative overflow-hidden -translate-y-6 md:-translate-y-0 flex justify-center",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            alt: selected.name,
+                                            src: selected.image_src.large,
+                                            loading: "eager",
+                                            className: "w-full h-[260px] md:h-[320px] lg:h-[360px] object-cover rounded-xl shadow-lg mx-auto"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                                            lineNumber: 97,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/MemoriesModal.tsx",
+                                        lineNumber: 96,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/MemoriesModal.tsx",
+                                    lineNumber: 95,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex-1 pt-6 md:pt-0 xl:ml-8 flex flex-col items-start justify-start text-left",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "text-5xl font-bethany mb-4 text-white hidden md:block",
+                                            children: selected.name
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                                            lineNumber: 108,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
+                                            whileHover: {
+                                                scale: 1.05
+                                            },
+                                            transition: {
+                                                type: "spring",
+                                                stiffness: 300
+                                            },
+                                            style: {
+                                                color: "#E01075"
+                                            },
+                                            className: "font-bold text-xl mb-4 cursor-pointer hidden md:block",
+                                            children: selected.seat
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                                            lineNumber: 109,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "mb-6 text-white text-lg hidden md:block",
+                                            children: selected.dates
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                                            lineNumber: 117,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "whitespace-pre-line text-white ",
+                                            style: {
+                                                fontFamily: 'CustomFont2, Arial, Helvetica, sans-serif'
+                                            },
+                                            children: mainText
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                                            lineNumber: 118,
+                                            columnNumber: 17
+                                        }, this),
+                                        authorText && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "italic text-sm opacity-70 mt-4 text-white",
+                                            children: authorText
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                                            lineNumber: 119,
+                                            columnNumber: 32
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex flex-col sm:flex-row gap-4 mt-6 items-start justify-start",
+                                            children: [
+                                                !hidePosterDownload && (selected.posterLink ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: selected.posterLink,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "bg-white rounded-full cursor-pointer px-6 py-3 h-12 text-xs text-[#E01075] font-medium flex items-center gap-2 hover:bg-gray-100 transition min-w-[160px] justify-center",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "-mb-1",
+                                                        children: "পোস্টের ডাউনলোড করুন "
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/MemoriesModal.tsx",
+                                                        lineNumber: 130,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/MemoriesModal.tsx",
+                                                    lineNumber: 124,
+                                                    columnNumber: 21
+                                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    disabled: true,
+                                                    className: "bg-white rounded-full cursor-not-allowed px-6 py-3 h-12 text-xs text-[#E01075] font-medium flex items-center gap-2 opacity-50 min-w-[160px] justify-center",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "-mb-1",
+                                                        children: "পোস্টের ডাউনলোড করুন "
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/MemoriesModal.tsx",
+                                                        lineNumber: 137,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/MemoriesModal.tsx",
+                                                    lineNumber: 133,
+                                                    columnNumber: 21
+                                                }, this)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: handleShare,
+                                                    className: "bg-[#E01075] rounded-full cursor-pointer px-6 py-3 h-12 transition-all uppercase text-xs text-white font-medium flex items-center gap-2 min-w-[160px] justify-center",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "-mb-1",
+                                                        children: "শেয়ার করুন"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/MemoriesModal.tsx",
+                                                        lineNumber: 144,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/MemoriesModal.tsx",
+                                                    lineNumber: 140,
+                                                    columnNumber: 19
+                                                }, this),
+                                                selected.videoLink && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: selected.videoLink,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "bg-[#FF0000] rounded-full cursor-pointer px-6 py-3 h-12 text-xs text-white font-medium flex items-center gap-2 hover:bg-[#cc0000] transition min-w-[160px] justify-center",
+                                                    style: {
+                                                        textTransform: 'uppercase'
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                            xmlns: "http://www.w3.org/2000/svg",
+                                                            width: "20",
+                                                            height: "20",
+                                                            fill: "currentColor",
+                                                            viewBox: "0 0 24 24",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                d: "M23.498 6.186a2.994 2.994 0 0 0-2.112-2.116C19.228 3.5 12 3.5 12 3.5s-7.228 0-9.386.57A2.994 2.994 0 0 0 .502 6.186C0 8.344 0 12 0 12s0 3.656.502 5.814a2.994 2.994 0 0 0 2.112 2.116C4.772 20.5 12 20.5 12 20.5s7.228 0 9.386-.57a2.994 2.994 0 0 0 2.112-2.116C24 15.656 24 12 24 12s0-3.656-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/MemoriesModal.tsx",
+                                                                lineNumber: 154,
+                                                                columnNumber: 126
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                                                            lineNumber: 154,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: "ইউটিউব ভিডিও"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                                                            lineNumber: 155,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/MemoriesModal.tsx",
+                                                    lineNumber: 147,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                                            lineNumber: 122,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/MemoriesModal.tsx",
+                                    lineNumber: 107,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/MemoriesModal.tsx",
+                            lineNumber: 93,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/MemoriesModal.tsx",
+                    lineNumber: 81,
+                    columnNumber: 11
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/MemoriesModal.tsx",
+            lineNumber: 59,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/MemoriesModal.tsx",
+        lineNumber: 57,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/app/components/DeadImages.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$animated$2d$group$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/animated-group.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$utils$2f$deadImagesData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/utils/deadImagesData.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MemoriesModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/MemoriesModal.tsx [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+function AnimatedGroupPreset() {
+    const [modalOpen, setModalOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [selected, setSelected] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const handleOpen = (memory)=>{
+        setSelected(memory);
+        setModalOpen(true);
+    };
+    const handleClose = ()=>{
+        setModalOpen(false);
+        setSelected(null);
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex flex-col items-center w-full",
+        style: {
+            background: '#161819'
+        },
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                className: "text-4xl md:text-5xl font-bold text-center pt-24 text-white",
+                style: {
+                    fontFamily: 'CustomFont, Arial, Helvetica, sans-serif'
+                },
+                children: "আমাদের হারিয়ে ফেলা ফুল গুলো"
+            }, void 0, false, {
+                fileName: "[project]/app/components/DeadImages.tsx",
+                lineNumber: 23,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$animated$2d$group$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedGroup"], {
+                className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-24 py-8",
+                preset: "scale",
+                children: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$utils$2f$deadImagesData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["deadImagesData"].map((memory, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "relative w-full aspect-[3/4] min-h-[420px] flex flex-col items-center justify-end rounded-[12px] overflow-hidden shadow-lg group cursor-pointer",
+                        onClick: ()=>handleOpen(memory),
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                src: memory.image_src.large,
+                                alt: memory.name,
+                                className: "absolute inset-0 w-full h-full object-cover"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/DeadImages.tsx",
+                                lineNumber: 36,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-[#161819] to-transparent z-10"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/DeadImages.tsx",
+                                lineNumber: 41,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative z-20 w-full flex flex-col items-center justify-end pb-6",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-white font-bold text-xl",
+                                        children: memory.name
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/components/DeadImages.tsx",
+                                        lineNumber: 43,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-white text-lg",
+                                        style: {
+                                            fontFamily: 'CustomFont, Arial, Helvetica, sans-serif',
+                                            color: '#ea477e'
+                                        },
+                                        children: memory.dates
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/components/DeadImages.tsx",
+                                        lineNumber: 44,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/components/DeadImages.tsx",
+                                lineNumber: 42,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute inset-0 bg-[#E82063] bg-opacity-0 group-hover:bg-opacity-90 flex items-center justify-center transition-all duration-500 z-30 opacity-0 group-hover:opacity-80",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-white font-bold text-xl",
+                                    children: "বিস্তারিত পড়ুন "
+                                }, void 0, false, {
+                                    fileName: "[project]/app/components/DeadImages.tsx",
+                                    lineNumber: 48,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/DeadImages.tsx",
+                                lineNumber: 47,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, idx, true, {
+                        fileName: "[project]/app/components/DeadImages.tsx",
+                        lineNumber: 31,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/app/components/DeadImages.tsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MemoriesModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                isVisible: modalOpen,
+                selected: selected,
+                handleClose: handleClose,
+                hidePosterDownload: true
+            }, void 0, false, {
+                fileName: "[project]/app/components/DeadImages.tsx",
+                lineNumber: 53,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/app/components/DeadImages.tsx",
+        lineNumber: 22,
+        columnNumber: 5
+    }, this);
+}
+function AnimatedGroupCustomVariants() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$animated$2d$group$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedGroup"], {
+        className: "grid grid-cols-2 gap-4 p-8 md:grid-cols-3 lg:grid-cols-4",
+        variants: {
+            container: {
+                hidden: {
+                    opacity: 0
+                },
+                visible: {
+                    opacity: 1,
+                    transition: {
+                        staggerChildren: 0.05
+                    }
+                }
+            },
+            item: {
+                hidden: {
+                    opacity: 0,
+                    y: 40,
+                    filter: "blur(4px)"
+                },
+                visible: {
+                    opacity: 1,
+                    y: 0,
+                    filter: "blur(0px)",
+                    transition: {
+                        duration: 1.2,
+                        type: "spring",
+                        bounce: 0.3
+                    }
+                }
+            }
+        },
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                src: "/slider_images/1.webp",
+                className: "h-auto w-full rounded-[4px]"
+            }, void 0, false, {
+                fileName: "[project]/app/components/DeadImages.tsx",
+                lineNumber: 87,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                src: "/slider_images/2.webp",
+                className: "h-auto w-full rounded-[4px]"
+            }, void 0, false, {
+                fileName: "[project]/app/components/DeadImages.tsx",
+                lineNumber: 92,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                src: "/slider_images/3.webp",
+                className: "h-auto w-full rounded-[4px]"
+            }, void 0, false, {
+                fileName: "[project]/app/components/DeadImages.tsx",
+                lineNumber: 97,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/app/components/DeadImages.tsx",
+        lineNumber: 60,
+        columnNumber: 5
+    }, this);
+}
+function AnimatedGroupCustomVariants2() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$animated$2d$group$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedGroup"], {
+        className: "grid h-full grid-cols-2 gap-8 p-12 md:grid-cols-3 lg:grid-cols-4",
+        variants: {
+            container: {
+                visible: {
+                    transition: {
+                        staggerChildren: 0.05
+                    }
+                }
+            },
+            item: {
+                hidden: {
+                    opacity: 0,
+                    filter: "blur(12px)",
+                    y: -60,
+                    rotateX: 90
+                },
+                visible: {
+                    opacity: 1,
+                    filter: "blur(0px)",
+                    y: 0,
+                    rotateX: 0,
+                    transition: {
+                        type: "spring",
+                        bounce: 0.3,
+                        duration: 1
+                    }
+                }
+            }
+        },
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    src: "/national_geographic_logo.svg",
+                    alt: "Apple Music logo",
+                    className: "h-auto w-full"
+                }, void 0, false, {
+                    fileName: "[project]/app/components/DeadImages.tsx",
+                    lineNumber: 141,
+                    columnNumber: 9
+                }, this)
+            }, 1, false, {
+                fileName: "[project]/app/components/DeadImages.tsx",
+                lineNumber: 140,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    src: "/sony_logo.svg",
+                    alt: "Chrome logo",
+                    className: "h-auto w-full"
+                }, void 0, false, {
+                    fileName: "[project]/app/components/DeadImages.tsx",
+                    lineNumber: 148,
+                    columnNumber: 9
+                }, this)
+            }, 2, false, {
+                fileName: "[project]/app/components/DeadImages.tsx",
+                lineNumber: 147,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    src: "/strava_logo.svg",
+                    alt: "Strava logo",
+                    className: "h-auto w-full"
+                }, void 0, false, {
+                    fileName: "[project]/app/components/DeadImages.tsx",
+                    lineNumber: 151,
+                    columnNumber: 9
+                }, this)
+            }, 3, false, {
+                fileName: "[project]/app/components/DeadImages.tsx",
+                lineNumber: 150,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    src: "/nintendo_logo.svg",
+                    alt: "Nintendo logo",
+                    className: "h-auto w-full"
+                }, void 0, false, {
+                    fileName: "[project]/app/components/DeadImages.tsx",
+                    lineNumber: 158,
+                    columnNumber: 9
+                }, this)
+            }, 4, false, {
+                fileName: "[project]/app/components/DeadImages.tsx",
+                lineNumber: 157,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/app/components/DeadImages.tsx",
+        lineNumber: 109,
+        columnNumber: 5
+    }, this);
+}
+const __TURBOPACK__default__export__ = AnimatedGroupPreset;
+}),
+"[project]/src/components/Memory.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Memory
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+;
+function Memory({ handleOpen, memory }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+        onClick: handleOpen,
+        className: "cursor-pointer group",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "border-b border-gray-700",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-center gap-5",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "w-32  md:w-48",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative overflow-hidden",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    alt: memory.name,
+                                    loading: "lazy",
+                                    className: "rounded-xl w-auto h-48 object-cover",
+                                    src: memory.image_src.small
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Memory.tsx",
+                                    lineNumber: 18,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-0 rounded-xl w-36 h-48 bg-[#E82063] bg-opacity-0 group-hover:bg-opacity-90 flex items-center justify-center transition-all duration-500 z-30 opacity-0 group-hover:opacity-100",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-white font-bold text-sm",
+                                        children: memory.seat
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Memory.tsx",
+                                        lineNumber: 25,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Memory.tsx",
+                                    lineNumber: 24,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Memory.tsx",
+                            lineNumber: 17,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Memory.tsx",
+                        lineNumber: 16,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center justify-between flex-1",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-left",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "font-bethany text-white text-xl mb-1 ",
+                                        children: memory.name
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Memory.tsx",
+                                        lineNumber: 31,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-lg uppercase text-[#a7a7a7]",
+                                        children: memory.seat
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Memory.tsx",
+                                        lineNumber: 36,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-xs uppercase pt-2 text-[#a7a7a7]",
+                                        children: memory.dates
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Memory.tsx",
+                                        lineNumber: 37,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/Memory.tsx",
+                                lineNumber: 30,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                    width: "16",
+                                    height: "16",
+                                    viewBox: "0 0 24 24",
+                                    fill: "none",
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: "M9 6L15 12L9 18",
+                                        stroke: "#E82063",
+                                        strokeWidth: "4",
+                                        strokeLinecap: "round",
+                                        strokeLinejoin: "round"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Memory.tsx",
+                                        lineNumber: 48,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Memory.tsx",
+                                    lineNumber: 41,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Memory.tsx",
+                                lineNumber: 40,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/Memory.tsx",
+                        lineNumber: 29,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/Memory.tsx",
+                lineNumber: 15,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Memory.tsx",
+            lineNumber: 14,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/Memory.tsx",
+        lineNumber: 13,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/app/utils/data.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "memories",
+    ()=>memories
+]);
+const zunayedHasanSokal = "/slider_images/8.webp";
+const abdulMazidImg = "/slider_images/18.webp";
+const abdullahTamim = "/slider_images/16.webp";
+const fahimMiya = "/slider_images/13.webp";
+const hasanImg = "/slider_images/19.webp";
+const ikraIslam = "/slider_images/23.webp";
+const khadizaMaya = "/slider_images/15.webp";
+const mdIbrahim = "/slider_images/22.webp";
+const siyamAli = "/slider_images/24.webp";
+const tasimImg = "/slider_images/17.webp";
+const mdAymanImg = "/slider_images/10.webp";
+const mdHossain = "/slider_images/14.webp";
+const mustafizImg = "/slider_images/20.webp";
+const rengnayaMurung = "/slider_images/21.webp";
+const rihanHossain = "/slider_images/12.webp";
+const robiulImg = "/slider_images/7.webp";
+const samiraImg = "/slider_images/9.webp";
+const zubayerHossain = "/slider_images/11.webp";
+const mdTamim = "/slider_images/6.webp";
+const memories = [
+    {
+        name: "জুনায়েদ হোসেন সকাল",
+        seat: "ঢাকা ৭ আসন",
+        dates: "২১ জানুয়ারী, ২০১৮",
+        image_src: {
+            small: zunayedHasanSokal,
+            large: zunayedHasanSokal
+        },
+        story: `ঢাকার লালবাগ থেকে সকাল নামের একটি শিশু ২১ জানুয়ারি ২০১৮ থেকে নিখোঁজ।
+আজ পেরিয়েছে ৮ বছর, তবুও তাকে উদ্ধার করা যায়নি।
+শিশুটি তখন ভিডিও গেম খেলছিল, আর তার ছোট্ট জীবন এক মুহূর্তে হারিয়ে গেল।
+পরিবারের প্রতিটি দিন কেটে যাচ্ছে অনিশ্চয়তা, হতাশা এবং ব্যথার সঙ্গে।
+কর্তৃপক্ষের সাহায্য প্রার্থনা করে পরিবার বারবার বলছে—আমাদের শিশুটি কোথায়?
+এই ৮ বছরের অপেক্ষা, এক পরিবারকে ভেঙে দিয়েছে, কিন্তু আমরা হার মানি না।
+আপনি যদি সকালকে দেখে থাকেন বা কোনো তথ্য জানেন, দয়া করে যোগাযোগ করুন এবং সাহায্য করুন।
+একটি ছোট্ট সহানুভূতি, একটি শেয়ার, হয়তো তাদের হারানো সন্তানকে ফিরিয়ে আনতে পারে।`,
+        posterLink: "https://drive.google.com/file/d/1bVCETzKEBvhr5vztXWGspak9r8Jsnq6h/view?usp=sharing",
+        videoLink: "https://www.youtube.com/watch?v=AKbWPDvgPVo&list=PPSV"
+    },
+    {
+        name: "আবদুল্লাহ তামিম",
+        seat: "ঢাকা-১৮ আসন ",
+        dates: "২০ মে, ২০২৫",
+        image_src: {
+            small: abdullahTamim,
+            large: abdullahTamim
+        },
+        story: `২০ মে ২০২৫। সকাল প্রায় ৯টা। প্রতিদিনের মতো স্কুলে যাওয়ার উদ্দেশ্যে বাড়ি থেকে বেরিয়েছিল তামিম। সরিষা-প্রেমটিয়া মাধ্যমিক বিদ্যালয়ের সপ্তম শ্রেণির এই ছাত্রটি—মো. নজরুল ইসলামের একমাত্র ছেলে—সেদিন আর ফিরে আসেনি। পাংশা উপজেলার কলিমহর ইউনিয়নের সাঁজুরিয়া গ্রামে সেই সকালটাই ছিল শেষ স্বাভাবিক সকাল।
+দিন গড়িয়েছে, মাস পেরিয়েছে। তামিম নিখোঁজ হওয়ার প্রায় আট মাস কেটে গেছে। সন্তানের খোঁজে তার পরিবার একা থাকেনি। চ্যানেল ২৪–এর প্রতিবেদন অনুযায়ী, ৩ জুন ২০২৫ তারিখে পাংশা পৌর শহরে পরিবার ও এলাকাবাসী মানববন্ধন কর্মসূচি পালন করেছে। সেই মানববন্ধন ছিল নীরব প্রতিবাদ আর অসহায় আকুতির প্রতিচ্ছবি।
+এরপরও থেমে থাকেনি চেষ্টা। ফুটবল ম্যাচে প্ল্যাকার্ড প্রদর্শনের মাধ্যমে, সামাজিক যোগাযোগমাধ্যমে ছবি ও বার্তা ছড়িয়ে দিয়ে তামিমের সন্ধানের আহ্বান জানানো হয়েছে। তবুও জুন ২০২৫–এর পর তার অবস্থান সম্পর্কে কোনো নিশ্চিত সরকারি বা সংবাদমাধ্যমের তথ্য সামনে আসেনি।
+তামিম আজও নিখোঁজ। আর তার পরিবার আজও অপেক্ষায়—একটি সকাল, একটি দরজা খোলার শব্দ, কিংবা শুধু একটি খবরের আশায়। যতদিন সে ফিরে না আসে, এই অপেক্ষা শেষ হবে না।?`,
+        posterLink: "https://drive.google.com/file/d/1WE8tcAwQot1wqgNTgOXzFc2TGZqX73SQ/view?usp=sharing",
+        videoLink: ""
+    },
+    {
+        name: "ফাহিম মিয়া",
+        seat: "ঢাকা-১৮ আসন",
+        dates: "২৫ জানুয়ারী, ২০২৬ ",
+        image_src: {
+            small: fahimMiya,
+            large: fahimMiya
+        },
+        story: `নিখোঁজের তারিখ: ২৫ জানুয়ারি ২০২৬ থেকে
+ফাহিম পড়াশোনার কথা বলে বাড়ি থেকে বের হয়েছিল।
+এর আগেও কয়েকবার এভাবে বের হয়ে গিয়েছিল, তখন তাকে স্টেশন এলাকা থেকে পাওয়া যায়।
+কিন্তু এবার অনেক খোঁজাখুঁজি করেও এখনো তার কোনো সন্ধান মেলেনি।
+প্রতিটি দিন পরিবারের জন্য কাটছে ভয় আর অনিশ্চয়তার মধ্যে।
+একটি পরিবার আজ তার প্রিয় মানুষটির অপেক্ষায় পথ চেয়ে আছে।
+আপনি যদি কোথাও ফাহিমকে দেখে থাকেন বা কোনো তথ্য জানেন, দয়া করে যোগাযোগ করুন।
+একটি শেয়ারই হয়তো তাকে আবার পরিবারের কাছে ফিরিয়ে দিতে পারে।`,
+        posterLink: "https://drive.google.com/file/d/1qUSch-uhfXHEGuZiOOF_r_Xg_YgbDdze/view?usp=sharing",
+        videoLink: ""
+    },
+    {
+        name: "হাসান",
+        seat: "ঢাকা-১৮ আসন ",
+        dates: "১০ ডিসেম্বর, ২০২৫",
+        image_src: {
+            small: hasanImg,
+            large: hasanImg
+        },
+        story: `ছোট হাসান, মা’র হাত ধরে হাঁটছিল রোজকার মতো।
+মা হোস্টেলে কাজ করে, সকাল-সন্ধ্যা ছেলেকে নিয়ে যাওয়া-আসা—আজও ২ নং গেটের কাছে এসে পৌঁছেছে।
+হঠাৎ মা’র হাত ছুটে গেল, আর তখনই চোখের পলকে হারিয়ে গেল হাসান |
+মা চিৎকার করে ডাকছে, “হাসান! হাসান!” কিন্তু চারপাশে শুধু অচেনা মুখ আর গাড়ির হর্ন।
+২ নং গেটের সেই জায়গাটা যেন গিলে খেয়ে ফেলেছে ছোট্ট হাসানকে ।
+এখন মা বসে আছে রাস্তার ধারে, হাতে হাসানের ছবিটা চেপে ধরে, চোখে জল আর বুকে একটা ফাঁকা গর্ত—কবে ফিরবে রে আমার হাসান?`,
+        posterLink: "https://drive.google.com/file/d/1scymIW_3ev5elHZ5l58H5f76nh22RC4t/view?usp=sharing",
+        videoLink: ""
+    },
+    {
+        name: "ইকরা ইসলাম",
+        seat: "ঢাকা-১৮ আসন",
+        dates: "১ নভেম্বর, ২০২৪ ",
+        image_src: {
+            small: ikraIslam,
+            large: ikraIslam
+        },
+        story: `২০২৪ সালের ১ নভেম্বর, শুক্রবার বিকেল ৫টার সেই অভিশপ্ত মুহূর্তটি পুরো পরিবারের আকাশ থেকে সবটুকু আলো কেড়ে নিয়েছে। গাজীপুরের সালনা বন বিভাগের সরকারি কোয়ার্টারের যে আঙিনায় একটু আগেও ৫ বছরের ছোট্ট ইকরা ইসলাম হেসে-খেলে বেড়াচ্ছিল, মুহূর্তের ব্যবধানে সেই আঙিনা আজ এক নিস্তব্ধ হাহাকারে পরিণত হয়েছে। ইকরা শুধু আমাদের একটি সন্তান নয়, সে আমাদের পরিবারের প্রাণ।
+  তার সেই চঞ্চলতা, ফর্সা গায়ের রঙের মায়াবী চেহারা আর আধো-আধো বুলি ছাড়া আমাদের প্রতিটি সেকেন্ড কাটছে অসহ্য যন্ত্রণায়। মাত্র ৩ ফুট উচ্চতার এই ছোট্ট মানুষটি ছাড়া আমাদের ঘর আজ মরুভূমির মতো খাঁ খাঁ করছে। ওর মা-বাবার চোখের জল আর থামছে না, প্রতিটি পায়ের শব্দে তারা ভাবছেন—এই বুঝি ইকরা ফিরে এলো!`,
+        posterLink: "https://drive.google.com/file/d/1NVvB3HBFGz-BYt4NQDz2mnj_OcweTK_s/view?usp=sharing",
+        videoLink: ""
+    },
+    {
+        name: "খাদিজা মায়া",
+        seat: "ঢাকা-১৮ আসন",
+        dates: "১১ এপ্রিল, ২০২১",
+        image_src: {
+            small: khadizaMaya,
+            large: khadizaMaya
+        },
+        story: `চাঁদপুরের শাহরাস্তি থানার ছোটতুলা গ্রামে থাকত পাঁচ বছরের ছোট্ট মেয়েটি খাদিজা আক্তার। বাবার নাম সাব্বির হোসেন (আব্দুল্লাহ), মায়ের নাম ফাতেমা আক্তার।
+১১ এপ্রিল ২০২১, সকাল প্রায় ১১টা ৩০ মিনিটে, সে প্রতিদিনের মতো বাড়ির পাশের বাড়িতে খেলতে যায়। কিন্তু সেদিন আর ফিরে আসেনি।
+খোঁজ করা হয় চারপাশে, গ্রামের অলিগলিতে, পুকুরপাড়ে—কিন্তু কোথাও পাওয়া যায়নি তাকে। মুহূর্তেই আনন্দের বাড়ি নেমে আসে গভীর শূন্যতায়।
+আজও সেই বাড়িতে অপেক্ষা থেমে নেই।
+মায়ের চোখে জল, বাবার বুকে একটাই আশা—
+কোনো একদিন খাদিজা ফিরে আসবে।
+এটি কোনো গল্প নয়, এটি একটি নিখোঁজ শিশুর বাস্তব কাহিনি।
+একটু সহানুভূতি, একটু সাহায্য—হয়তো একটি শিশুকে ঘরে ফিরিয়ে দিতে পারে।`,
+        posterLink: "https://drive.google.com/file/d/1P-5wN7s77smyspjEg3QjpXCpPIesrxB9/view?usp=sharing",
+        videoLink: ""
+    },
+    {
+        name: "সিয়াম আলী",
+        seat: "ঢাকা-১৮ আসন ",
+        dates: "১৫ নভেম্বর, ২০২৫",
+        image_src: {
+            small: siyamAli,
+            large: siyamAli
+        },
+        story: `কোথায় তুমি সিয়াম?
+এই সেই সিয়াম, যাকে খুঁজে বেড়াচ্ছে তার অসহায় বাবা মা| মা আজো রোজ গরম ভাত থালায় বেড়ে অপেক্ষা করেন এই খোকা এলো বলে|
+বাবা আজো মুঠোফোন হাতে নিয়ে অপেক্ষা করেন, সিয়ামের খোঁজ পাওয়ার সংবাদ এলো বলে| কেউ কেউ বলে সর্বশেষ তাকে রংপুরে দেখা গিয়েছে|
+আপনি কি তাকে দেখেছেন?`,
+        posterLink: "https://drive.google.com/file/d/1I3JW4X9HY8I7VA8aWuIxzk8NhA4s3Ger/view?usp=sharing",
+        videoLink: ""
+    },
+    {
+        name: "মোঃ হোসেন",
+        seat: "ঢাকা-১৮ আসন ",
+        dates: "৬ ফেব্রুয়ারী, ২০২৬",
+        image_src: {
+            small: mdHossain,
+            large: mdHossain
+        },
+        story: `একটি পরিবার তাদের ছোট্ট সন্তান হোসাইন (বয়স ৯ বছর) এর খোঁজে এখনো উদ্বিগ্ন।
+পিতা কামরুল, বাড়ি চক পাড়া। অনেক খোঁজাখুঁজির পরও শিশুটির কোনো সন্ধান পাওয়া যায়নি।
+একটি শিশু কোথায় আছে, কেমন আছে—এই অনিশ্চয়তাই পরিবারটিকে ভেঙে দিচ্ছে।
+আপনার আশেপাশে, রাস্তায়, বাজারে, বাসস্ট্যান্ড বা কোনো স্থানে যদি শিশুটিকে দেখে থাকেন, দয়া করে বিষয়টি অবহেলা করবেন না।
+একটু সহযোগিতাই পারে একটি পরিবারকে তাদের হারানো সন্তানকে ফিরিয়ে দিতে।`,
+        posterLink: "https://drive.google.com/file/d/1tRLzyoDbkfr_NR3XAVcvxNG9DojTvNLS/view?usp=sharing",
+        videoLink: ""
+    },
+    {
+        name: "মোঃ তামিম",
+        seat: "ঢাকা-১৮ আসন ",
+        dates: "২৪ জানুয়ারী, ২০২৬",
+        image_src: {
+            small: mdTamim,
+            large: mdTamim
+        },
+        story: `তামিম ছিল খুব সাধারণ একটি ছেলে, পরিবারের সকলের চোখের মণি। তার হাসিতে ভরে থাকত বাড়ি। কিন্তু হঠাৎ করেই সব কিছু বদলে গেল। গত ২৪-০১-২০২৬ তারিখে রাত ৯টার দিকে সে বাসা থেকে নতুন বাজার আসার পথে হঠাৎ নিখোঁজ হয়ে যায়। অনেক খোঁজাখুঁজি করেও তার কোনো সন্ধান মেলেনি।
+নিখোঁজ শিশুটির মাথায় একটি কাটার দাগ রয়েছে। পরনে ছিল প্যান্ট, শার্ট এবং একটি কালো সুয়েটার।
+যদি কোনো হৃদয়বান ব্যক্তি এই শিশুটির খোঁজ জানেন, দয়া করে জানাবেন। একটি অসহায় পরিবার তাদের সন্তানের অপেক্ষায় প্রতিটি মুহূর্ত কষ্ট সহ্য করছে। আপনার সামান্য তথ্য তাদের বড় সাহায্য করতে পারে।
+আমরা কি এই বার্তাটি আরও মানুষের কাছে পৌঁছে দিতে শেয়ার করতে পারি?`,
+        posterLink: "https://drive.google.com/file/d/1SZ4lULqHJpUzk1RpVTRHwK1czG-QWBXD/view?usp=sharing",
+        videoLink: ""
+    },
+    {
+        name: "মোঃ মুস্তাফিজ",
+        seat: "দিনাজপুর ৫ আসন ",
+        dates: "২৩ ডিসেম্বর, ২০২৫",
+        image_src: {
+            small: mustafizImg,
+            large: mustafizImg
+        },
+        story: `২০২৫ সালের ২৩শে ডিসেম্বর, শীতের এক সন্ধ্যায় পার্বতীপুরের আকাশ যখন কুয়াশায় ঢেকে যাচ্ছিল, ঠিক তখনই একটি পরিবারের সব আনন্দ চিরতরে ফিকে হয়ে যায়। ১৪ বছরের কিশোর মুস্তাফিজ প্রতিদিনের মতোই বাড়ির পাশে ব্যাডমিন্টন খেলছিল। র‍্যাকেটের প্রতিটি শব্দ আর তারুণ্যের প্রাণচঞ্চলতায় মুখরিত ছিল চারপাশ। কিন্তু সন্ধ্যা গড়িয়ে রাত নামলেও, সেই চঞ্চল ছেলেটি আর ঘরে ফেরেনি।
+মুস্তাফিজের বাবা একজন শ্রবণ প্রতিবন্ধী। তিনি হয়তো কানে শুনতে পান না, কিন্তু সন্তানের জন্য তার বুকের ভেতরের হাহাকার কোনো শব্দের চেয়ে কম নয়। যে বাবা মুখে কথা বলতে পারেন না, তার চোখের জল আর অস্থির পায়চারি আজ এক নিস্তব্ধ আর্তনাদে পরিণত হয়েছে। এর আগেও মুস্তাফিজ একবার নিখোঁজ হয়ে দ্রুত ফিরে এসেছিল, তাই পরিবার হয়তো ভেবেছিল এবারও হয়তো সে কোনো পরিচিত মুখ হয়ে ফিরে আসবে। কিন্তু সময় যত গড়াচ্ছে, অন্ধকার যেন আরও ঘনীভূত হচ্ছে।`,
+        posterLink: "https://drive.google.com/file/d/1-maFRVNBwzhGHKx9UP-11qOP7fRJGhc4/view?usp=sharing"
+    },
+    {
+        name: "রেংনায়া মুরুং",
+        seat: "ঢাকা-১৮ আসন ",
+        dates: "২৫ সেপ্টেম্বর, ২০২৫",
+        image_src: {
+            small: rengnayaMurung,
+            large: rengnayaMurung
+        },
+        story: `স্কুল হোস্টেলের সেই হাস্যজ্জল মুখ, যার হাসিতে প্রাণবন্ত থাকতো হোস্টেলের প্রতিটি কোনা|
+  কিন্তু সেপ্টেম্বরের কোনো এক নিকষ কালো প্রহরে সেই হাসি মিলিয়ে যায় অজানায়|
+  স্কুল কর্তৃপক্ষ জানে না, জানে না হোস্টেলের ফুল বাগানের ছোট ফুলটি , কোথায় হারালো সেই হাসিমুখ, নিষ্পাপ মুরং|
+  পরিবার আজও খুঁজে চলেছে সেই অজানা ঠিকানা |`,
+        posterLink: "https://drive.google.com/file/d/1z2z4mUIsyruEq3_G9epES0Q87ilcCrB6/view?usp=sharing"
+    },
+    {
+        name: "রবিউল",
+        seat: "ঢাকা-১৩ আসন ",
+        dates: "৬ ডিসেম্বর, ২০২৫",
+        image_src: {
+            small: robiulImg,
+            large: robiulImg
+        },
+        story: `ভিড়ের মাঝে হঠাৎ হারিয়ে যায় ১২ বছরের কিশোরী এইচ শেহজাদি হাসনা।
+০৬/১২/২০২৫, শনিবার—ঘোটা বাস স্ট্যান্ড থেকে সে আর বাড়ি ফেরেনি।
+শ্যামলা গায়ের রং, গোল মুখ, উচ্চতা প্রায় ৪ ফুট—এই চেহারার মেয়েটিকে যদি কেউ দেখে থাকেন,
+দয়া করে একটি ফোন করুন।
+একটি খবরই ফিরিয়ে দিতে পারে একটি শিশুকে তার পরিবারের কাছে।
+মানবিক অনুরোধ—দয়া করে শেয়ার করুন।`,
+        posterLink: "https://drive.google.com/file/d/1nwEi3dAl89onB-fnRUEr7Yke_H3EcmZ-/view?usp=sharing"
+    },
+    {
+        name: "রিহান হোসেন",
+        seat: "ঢাকা-১৮ আসন ",
+        dates: "২৩ জানুয়ারি ২০২৬",
+        image_src: {
+            small: rihanHossain,
+            large: rihanHossain
+        },
+        story: `মুকুন্দপুর গ্রামের আকাশ আজ ভারী হয়ে আছে।  ছোট্ট রিহান হুসাইন হারিয়ে গেছে—একটা পরিবারের হাসি, আশা আর স্বপ্ন যেন হঠাৎ করেই অদৃশ্য হয়ে গেছে। সে শুধু একটা বাচ্চা না, সে একটা পরিবারের পুরো পৃথিবী। মানবিকতার খাতিরে অনুরোধ—যদি কেউ তাকে দেখে থাকেন বা কোনো তথ্য জানেন, দয়া করে যোগাযোগ করুন। আপনার একটা ছোট্ট সহানুভূতি, একটা শেয়ার, একটা ফোন কলই হতে পারে রিহানের ঘরে ফিরে আসার পথ ।`,
+        posterLink: "https://drive.google.com/file/d/1OJrdY51WBnp2QUI3A4fvLWew9sIj9Kas/view?usp=sharing"
+    },
+    {
+        name: "আব্দুল মজিদ",
+        seat: "ঢাকা-১৮ আসন ",
+        dates: "১৬ সেপ্টেম্বর, ২০২৫",
+        image_src: {
+            small: abdulMazidImg,
+            large: abdulMazidImg
+        },
+        story: `নরম বিকেলের আলোয় রানাভোলা উত্তর রোডের মোড়টা ছিল চেনা কোলাহলে ভরা। মেঘকা মেম্বারের বাড়ির পাশের মাঠে সেদিন খেলছিল আড়াই বছরের ছোট্ট আব্দুল মাজিদ। ফর্সা গায়ের রং, পরনে সাদা কাপড়—হাসিতে ভরা তার ছোট্ট মুখটা যেন মাঠের সবুজে আলাদা করে ঝিলমিল করছিল।
+
+কিন্তু মুহূর্তের অসাবধানতায় খেলাটা থেমে গেল। ৭ই মার্চ ২০২৫—সেদিনের বিকেল থেকে আব্দুল মাজিদ আর ফিরে এল না। বাবা মো. লালচান, মা মোহা. মিম—দু’জনেই পথ চেয়ে রইলেন, ডাক দিলেন নাম ধরে, মাঠ পেরিয়ে গলি-ঘুপচি খুঁজলেন। উত্তর এল না।
+
+রাত নামল, তবু আশাটা নিভল না। কারণ কোথাও না কোথাও নিশ্চয়ই কেউ একজন তাকে দেখেছে—কেউ একজন ভালো মানুষ। যদি কোনো সদয় হৃদয় ছোট্ট ছেলেটির সন্ধান পেয়ে থাকেন, তবে দয়া করে পরিচিত ঠিকানায় খবর দিন। একটি ফোনকলেই হয়তো আবার জ্বলে উঠবে একটি ঘর, ফিরে আসবে এক শিশুর হাসি।`,
+        posterLink: "https://drive.google.com/file/d/1zH8cOor_ifyJKnK8jacDfHmHnu-by9pQ/view?usp=sharing"
+    }
+];
+}),
+"[project]/src/components/Memories.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Memories
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MemoriesModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/MemoriesModal.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Memory$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Memory.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$utils$2f$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/utils/data.ts [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+function Memories() {
+    const [selected, setSelected] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])();
+    const [isVisible, setIsVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const hash = window.location.hash;
+        if (hash) {
+            const memoryName = hash.replace("#", "").replace(/-/g, " ");
+            const foundMemory = __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$utils$2f$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["memories"].find((memory)=>memory.name === memoryName);
+            if (foundMemory) {
+                setTimeout(()=>{
+                    setIsVisible(true);
+                    window.history.replaceState(null, "", window.location.origin);
+                    setSelected(foundMemory);
+                }, 0);
+            }
+        }
+    }, []);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full lg:container px-6 mx-auto",
+                style: {
+                    background: '#161819',
+                    minHeight: '100vh'
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "text-4xl md:text-5xl font-bold text-center mt-24 mb-12 text-white",
+                        style: {
+                            fontFamily: 'CustomFont, Arial, Helvetica, sans-serif',
+                            color: '#E82063'
+                        },
+                        children: "নিখোঁজ শিশুদের তালিকা"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Memories.tsx",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-12 gap-4",
+                        children: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$utils$2f$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["memories"].map((memory, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Memory$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                memory: memory,
+                                handleOpen: ()=>{
+                                    setIsVisible(true);
+                                    setSelected(memory);
+                                }
+                            }, idx, false, {
+                                fileName: "[project]/src/components/Memories.tsx",
+                                lineNumber: 36,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Memories.tsx",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/Memories.tsx",
+                lineNumber: 30,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MemoriesModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                selected: selected,
+                isVisible: isVisible,
+                handleClose: ()=>{
+                    setIsVisible(false);
+                    setSelected(undefined);
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/Memories.tsx",
+                lineNumber: 47,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+}),
+];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__23b32c13._.js.map
