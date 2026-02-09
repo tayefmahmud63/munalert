@@ -56,7 +56,7 @@ image4:"/sokal_images/sokal5.webp",
 
 {
   name: "আবদুল্লাহ তামিম",
-   seat: "ঢাকা-১৮ আসন ",
+   seat: "রাজবাড়ি ১ আসন",
   dates: "২০ মে, ২০২৫",
   image_src: {
     small: abdullahTamim,
@@ -72,7 +72,7 @@ videoLink:"",
 
 {
   name: "খাদিজা মায়া",
-  seat: "ঢাকা-১৮ আসন",
+  seat: "চাঁদপুর ২ আসন",
   dates: "১১ এপ্রিল, ২০২১",
   image_src: {
     small: khadizaMaya,
@@ -96,7 +96,7 @@ videoLink:"",
 
 {
   name: "ফাহিম মিয়া",
-   seat: "ঢাকা-১৮ আসন",
+   seat: "নরসিংদী ৫ আসন",
   dates: "২৫ জানুয়ারী, ২০২৬ ",
   image_src: {
     small: fahimMiya,
@@ -116,7 +116,7 @@ videoLink:"",
 
 {
   name: "হাসান",
-   seat: "ঢাকা-১৮ আসন ",
+   seat: "চট্টগ্রাম ৮ আসন",
   dates: "১০ ডিসেম্বর, ২০২৫",
   image_src: {
     small: hasanImg,
@@ -134,7 +134,7 @@ videoLink:"",
 
 {
   name: "ইকরা ইসলাম",
-  seat: "ঢাকা-১৮ আসন",
+  seat: "গাজীপুর ২ আসন",
   dates: "১ নভেম্বর, ২০২৪ ",
   image_src: {
     small: ikraIslam,
@@ -150,7 +150,7 @@ videoLink:"",
 
 {
   name: "সিয়াম আলী",
-  seat: "ঢাকা-১৮ আসন ",
+  seat: "কুষ্টিয়া ২ আসন",
   dates: "১৫ নভেম্বর, ২০২৫",
   image_src: {
     small:siyamAli ,
@@ -167,7 +167,7 @@ videoLink:"",
 
 {
   name: "মোঃ হোসেন",
-  seat: "ঢাকা-১৮ আসন ",
+  seat: "রাজশাহি ১ আসন",
   dates: "৬ ফেব্রুয়ারী, ২০২৬",
   image_src: {
     small: mdHossain,
@@ -185,7 +185,7 @@ videoLink:"",
 
 {
   name: "মোঃ তামিম",
-  seat: "ঢাকা-১৮ আসন ",
+  seat: "ঢাকা ১১ আসন",
   dates: "২৪ জানুয়ারী, ২০২৬",
   image_src: {
     small: mdTamim,
@@ -199,22 +199,11 @@ posterLink:"https://drive.google.com/file/d/1SZ4lULqHJpUzk1RpVTRHwK1czG-QWBXD/vi
 videoLink:"",
 },
 
-{
-  name: "মোঃ মুস্তাফিজ",
-  seat: "দিনাজপুর ৫ আসন ",
-  dates: "২৩ ডিসেম্বর, ২০২৫",
-  image_src: {
-    small: mustafizImg,
-    large: mustafizImg,
-  },
-  story: `২০২৫ সালের ২৩শে ডিসেম্বর, শীতের এক সন্ধ্যায় পার্বতীপুরের আকাশ যখন কুয়াশায় ঢেকে যাচ্ছিল, ঠিক তখনই একটি পরিবারের সব আনন্দ চিরতরে ফিকে হয়ে যায়। ১৪ বছরের কিশোর মুস্তাফিজ প্রতিদিনের মতোই বাড়ির পাশে ব্যাডমিন্টন খেলছিল। র‍্যাকেটের প্রতিটি শব্দ আর তারুণ্যের প্রাণচঞ্চলতায় মুখরিত ছিল চারপাশ। কিন্তু সন্ধ্যা গড়িয়ে রাত নামলেও, সেই চঞ্চল ছেলেটি আর ঘরে ফেরেনি।
-মুস্তাফিজের বাবা একজন শ্রবণ প্রতিবন্ধী। তিনি হয়তো কানে শুনতে পান না, কিন্তু সন্তানের জন্য তার বুকের ভেতরের হাহাকার কোনো শব্দের চেয়ে কম নয়। যে বাবা মুখে কথা বলতে পারেন না, তার চোখের জল আর অস্থির পায়চারি আজ এক নিস্তব্ধ আর্তনাদে পরিণত হয়েছে। এর আগেও মুস্তাফিজ একবার নিখোঁজ হয়ে দ্রুত ফিরে এসেছিল, তাই পরিবার হয়তো ভেবেছিল এবারও হয়তো সে কোনো পরিচিত মুখ হয়ে ফিরে আসবে। কিন্তু সময় যত গড়াচ্ছে, অন্ধকার যেন আরও ঘনীভূত হচ্ছে।`,
-posterLink:"https://drive.google.com/file/d/1-maFRVNBwzhGHKx9UP-11qOP7fRJGhc4/view?usp=sharing",
-},
+
 
 {
   name: "রেংনায়া মুরুং",
-  seat: "ঢাকা-১৮ আসন ",
+  seat: "বারদরবান আসন",
   dates: "২৫ সেপ্টেম্বর, ২০২৫",
   image_src: {
     small: rengnayaMurung,
@@ -229,7 +218,7 @@ posterLink:"https://drive.google.com/file/d/1-maFRVNBwzhGHKx9UP-11qOP7fRJGhc4/vi
 
 {
   name: "রবিউল",
-  seat: "ঢাকা-১৩ আসন ",
+  seat: "ঢাকা-১৩ আসন",
   dates: "৬ ডিসেম্বর, ২০২৫",
   image_src: {
     small: robiulImg,
@@ -242,18 +231,6 @@ posterLink:"https://drive.google.com/file/d/1-maFRVNBwzhGHKx9UP-11qOP7fRJGhc4/vi
 একটি খবরই ফিরিয়ে দিতে পারে একটি শিশুকে তার পরিবারের কাছে।
 মানবিক অনুরোধ—দয়া করে শেয়ার করুন।`,
 posterLink:"https://drive.google.com/file/d/1nwEi3dAl89onB-fnRUEr7Yke_H3EcmZ-/view?usp=sharing",
-},
-
-{
-  name: "রিহান হোসেন",
-  seat: "ঢাকা-১৮ আসন ",
-  dates: "২৩ জানুয়ারি ২০২৬",
-  image_src: {
-    small: rihanHossain,
-    large: rihanHossain,
-  },
-  story: `মুকুন্দপুর গ্রামের আকাশ আজ ভারী হয়ে আছে।  ছোট্ট রিহান হুসাইন হারিয়ে গেছে—একটা পরিবারের হাসি, আশা আর স্বপ্ন যেন হঠাৎ করেই অদৃশ্য হয়ে গেছে। সে শুধু একটা বাচ্চা না, সে একটা পরিবারের পুরো পৃথিবী। মানবিকতার খাতিরে অনুরোধ—যদি কেউ তাকে দেখে থাকেন বা কোনো তথ্য জানেন, দয়া করে যোগাযোগ করুন। আপনার একটা ছোট্ট সহানুভূতি, একটা শেয়ার, একটা ফোন কলই হতে পারে রিহানের ঘরে ফিরে আসার পথ ।`,
-posterLink:"https://drive.google.com/file/d/1OJrdY51WBnp2QUI3A4fvLWew9sIj9Kas/view?usp=sharing",
 },
 
 
