@@ -21,7 +21,7 @@ export default function Memory({ handleOpen, memory }: MemoryProps) {
                 className="rounded-xl w-auto h-48 object-cover"
                 src={memory.image_src.small}
               />
-              <div className="absolute inset-0 rounded-xl w-36 h-48 bg-[#E82063] bg-opacity-0 group-hover:bg-opacity-90 flex items-center justify-center transition-all duration-500 z-30 opacity-0 group-hover:opacity-100">
+              <div className="absolute inset-0 rounded-xl w-36 h-48 bg-[#E82063] bg-opacity-80 group-hover:bg-opacity-90 flex items-center justify-center transition-all duration-500 z-30 opacity-0 group-hover:opacity-80">
                 <span className="text-white font-bold text-sm">{memory.seat}</span>
               </div>
             </div>

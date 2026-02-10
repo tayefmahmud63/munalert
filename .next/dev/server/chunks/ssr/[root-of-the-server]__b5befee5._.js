@@ -507,6 +507,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 function DeadImagesStatic() {
+    // Patch the data to match MemoryType
+    const deadImagesData = __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$utils$2f$deadImagesData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["deadImagesData"].map((item)=>({
+            seat: "",
+            posterLink: "",
+            image1: undefined,
+            image2: undefined,
+            image3: undefined,
+            ...item,
+            image_src: {
+                small: item.image_src.large,
+                ...item.image_src
+            }
+        }));
     const [openIdx, setOpenIdx] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col items-center w-full py-20 ",
@@ -520,7 +533,7 @@ function DeadImagesStatic() {
                 children: "আমাদের হারিয়ে ফেলা ফুল গুলো"
             }, void 0, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 13,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -531,12 +544,12 @@ function DeadImagesStatic() {
                 children: "নিখোঁজ শিশুদের সন্ধানে জরুরি নোটিফিকেশন পদ্ধতি না থাকার কারণে ঝরে গেছে অনেক রঙিন ফুল। এই ফুলদের ফিরে পেতেই বাংলাদেশ মুন অ্যালার্টের আবির্ভাব।"
             }, void 0, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 16,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 px-24 py-8 justify-center",
-                children: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$utils$2f$deadImagesData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["deadImagesData"].map((memory, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: deadImagesData.map((memory, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "relative w-full aspect-[3/4] min-h-[420px] flex flex-col items-center justify-end rounded-[12px] overflow-hidden shadow-lg group cursor-pointer",
                         onClick: ()=>setOpenIdx(idx),
                         children: [
@@ -546,14 +559,14 @@ function DeadImagesStatic() {
                                 className: "absolute inset-0 w-full h-full object-cover"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/DeadImages.tsx",
-                                lineNumber: 26,
+                                lineNumber: 41,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-[#161819] to-transparent z-10"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/DeadImages.tsx",
-                                lineNumber: 31,
+                                lineNumber: 46,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -564,7 +577,7 @@ function DeadImagesStatic() {
                                         children: memory.name
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/DeadImages.tsx",
-                                        lineNumber: 33,
+                                        lineNumber: 48,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -576,13 +589,13 @@ function DeadImagesStatic() {
                                         children: memory.dates
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/DeadImages.tsx",
-                                        lineNumber: 34,
+                                        lineNumber: 49,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/DeadImages.tsx",
-                                lineNumber: 32,
+                                lineNumber: 47,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -592,39 +605,39 @@ function DeadImagesStatic() {
                                     children: "বিস্তারিত পড়ুন "
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/DeadImages.tsx",
-                                    lineNumber: 38,
+                                    lineNumber: 53,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/DeadImages.tsx",
-                                lineNumber: 37,
+                                lineNumber: 52,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, idx, true, {
                         fileName: "[project]/app/components/DeadImages.tsx",
-                        lineNumber: 21,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 19,
+                lineNumber: 34,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$MemoriesModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 isVisible: openIdx !== null,
-                selected: openIdx !== null ? __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$utils$2f$deadImagesData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["deadImagesData"][openIdx] : undefined,
+                selected: openIdx !== null ? deadImagesData[openIdx] : undefined,
                 handleClose: ()=>setOpenIdx(null),
                 hidePosterDownload: true
             }, void 0, false, {
                 fileName: "[project]/app/components/DeadImages.tsx",
-                lineNumber: 43,
+                lineNumber: 58,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/DeadImages.tsx",
-        lineNumber: 12,
+        lineNumber: 27,
         columnNumber: 5
     }, this);
 }
@@ -956,7 +969,7 @@ function Memory({ handleOpen, memory }) {
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute inset-0 rounded-xl w-36 h-48 bg-[#E82063] bg-opacity-0 group-hover:bg-opacity-90 flex items-center justify-center transition-all duration-500 z-30 opacity-0 group-hover:opacity-100",
+                                    className: "absolute inset-0 rounded-xl w-36 h-48 bg-[#E82063] bg-opacity-80 group-hover:bg-opacity-90 flex items-center justify-center transition-all duration-500 z-30 opacity-0 group-hover:opacity-80",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-white font-bold text-sm",
                                         children: memory.seat
@@ -1103,7 +1116,7 @@ const memories = [
         dates: "২১ জানুয়ারী, ২০১৮",
         image_src: {
             small: zunayedHasanSokal,
-            large: zunayedHasanSokal
+            large: "/poster_images/poster4.webp"
         },
         story: `ঢাকার লালবাগ থেকে সকাল নামের একটি শিশু ২১ জানুয়ারি ২০১৮ থেকে নিখোঁজ।
 আজ পেরিয়েছে ৮ বছর, তবুও তাকে উদ্ধার করা যায়নি।
@@ -1126,7 +1139,7 @@ const memories = [
         dates: "২০ মে, ২০২৫",
         image_src: {
             small: abdullahTamim,
-            large: abdullahTamim
+            large: "/poster_images/poster1.webp"
         },
         story: `২০ মে ২০২৫। সকাল প্রায় ৯টা। প্রতিদিনের মতো স্কুলে যাওয়ার উদ্দেশ্যে বাড়ি থেকে বেরিয়েছিল তামিম। সরিষা-প্রেমটিয়া মাধ্যমিক বিদ্যালয়ের সপ্তম শ্রেণির এই ছাত্রটি—মো. নজরুল ইসলামের একমাত্র ছেলে—সেদিন আর ফিরে আসেনি। পাংশা উপজেলার কলিমহর ইউনিয়নের সাঁজুরিয়া গ্রামে সেই সকালটাই ছিল শেষ স্বাভাবিক সকাল।
 দিন গড়িয়েছে, মাস পেরিয়েছে। তামিম নিখোঁজ হওয়ার প্রায় আট মাস কেটে গেছে। সন্তানের খোঁজে তার পরিবার একা থাকেনি। চ্যানেল ২৪–এর প্রতিবেদন অনুযায়ী, ৩ জুন ২০২৫ তারিখে পাংশা পৌর শহরে পরিবার ও এলাকাবাসী মানববন্ধন কর্মসূচি পালন করেছে। সেই মানববন্ধন ছিল নীরব প্রতিবাদ আর অসহায় আকুতির প্রতিচ্ছবি।
@@ -1141,7 +1154,7 @@ const memories = [
         dates: "১১ এপ্রিল, ২০২১",
         image_src: {
             small: khadizaMaya,
-            large: khadizaMaya
+            large: "/poster_images/poster3.webp"
         },
         story: `চাঁদপুরের শাহরাস্তি থানার ছোটতুলা গ্রামে থাকত পাঁচ বছরের ছোট্ট মেয়েটি খাদিজা আক্তার। বাবার নাম সাব্বির হোসেন (আব্দুল্লাহ), মায়ের নাম ফাতেমা আক্তার।
 ১১ এপ্রিল ২০২১, সকাল প্রায় ১১টা ৩০ মিনিটে, সে প্রতিদিনের মতো বাড়ির পাশের বাড়িতে খেলতে যায়। কিন্তু সেদিন আর ফিরে আসেনি।
@@ -1160,7 +1173,7 @@ const memories = [
         dates: "২৫ জানুয়ারী, ২০২৬ ",
         image_src: {
             small: fahimMiya,
-            large: fahimMiya
+            large: "/poster_images/poster5.webp"
         },
         story: `নিখোঁজের তারিখ: ২৫ জানুয়ারি ২০২৬ থেকে
 ফাহিম পড়াশোনার কথা বলে বাড়ি থেকে বের হয়েছিল।
@@ -1179,7 +1192,7 @@ const memories = [
         dates: "১০ ডিসেম্বর, ২০২৫",
         image_src: {
             small: hasanImg,
-            large: hasanImg
+            large: "/poster_images/hasan.webp"
         },
         story: `ছোট হাসান, মা’র হাত ধরে হাঁটছিল রোজকার মতো।
 মা হোস্টেলে কাজ করে, সকাল-সন্ধ্যা ছেলেকে নিয়ে যাওয়া-আসা—আজও ২ নং গেটের কাছে এসে পৌঁছেছে।
@@ -1196,7 +1209,7 @@ const memories = [
         dates: "১ নভেম্বর, ২০২৪ ",
         image_src: {
             small: ikraIslam,
-            large: ikraIslam
+            large: "/poster_images/poster2.webp"
         },
         story: `২০২৪ সালের ১ নভেম্বর, শুক্রবার বিকেল ৫টার সেই অভিশপ্ত মুহূর্তটি পুরো পরিবারের আকাশ থেকে সবটুকু আলো কেড়ে নিয়েছে। গাজীপুরের সালনা বন বিভাগের সরকারি কোয়ার্টারের যে আঙিনায় একটু আগেও ৫ বছরের ছোট্ট ইকরা ইসলাম হেসে-খেলে বেড়াচ্ছিল, মুহূর্তের ব্যবধানে সেই আঙিনা আজ এক নিস্তব্ধ হাহাকারে পরিণত হয়েছে। ইকরা শুধু আমাদের একটি সন্তান নয়, সে আমাদের পরিবারের প্রাণ।
   তার সেই চঞ্চলতা, ফর্সা গায়ের রঙের মায়াবী চেহারা আর আধো-আধো বুলি ছাড়া আমাদের প্রতিটি সেকেন্ড কাটছে অসহ্য যন্ত্রণায়। মাত্র ৩ ফুট উচ্চতার এই ছোট্ট মানুষটি ছাড়া আমাদের ঘর আজ মরুভূমির মতো খাঁ খাঁ করছে। ওর মা-বাবার চোখের জল আর থামছে না, প্রতিটি পায়ের শব্দে তারা ভাবছেন—এই বুঝি ইকরা ফিরে এলো!`,
@@ -1224,7 +1237,7 @@ const memories = [
         dates: "৬ ফেব্রুয়ারী, ২০২৬",
         image_src: {
             small: mdHossain,
-            large: mdHossain
+            large: "/poster_images/siam-ali.webp"
         },
         story: `একটি পরিবার তাদের ছোট্ট সন্তান হোসাইন (বয়স ৯ বছর) এর খোঁজে এখনো উদ্বিগ্ন।
 পিতা কামরুল, বাড়ি চক পাড়া। অনেক খোঁজাখুঁজির পরও শিশুটির কোনো সন্ধান পাওয়া যায়নি।
@@ -1240,7 +1253,7 @@ const memories = [
         dates: "২৪ জানুয়ারী, ২০২৬",
         image_src: {
             small: mdTamim,
-            large: mdTamim
+            large: "/poster_images/tamim.webp"
         },
         story: `তামিম ছিল খুব সাধারণ একটি ছেলে, পরিবারের সকলের চোখের মণি। তার হাসিতে ভরে থাকত বাড়ি। কিন্তু হঠাৎ করেই সব কিছু বদলে গেল। গত ২৪-০১-২০২৬ তারিখে রাত ৯টার দিকে সে বাসা থেকে নতুন বাজার আসার পথে হঠাৎ নিখোঁজ হয়ে যায়। অনেক খোঁজাখুঁজি করেও তার কোনো সন্ধান মেলেনি।
 নিখোঁজ শিশুটির মাথায় একটি কাটার দাগ রয়েছে। পরনে ছিল প্যান্ট, শার্ট এবং একটি কালো সুয়েটার।
@@ -1255,7 +1268,7 @@ const memories = [
         dates: "২৫ সেপ্টেম্বর, ২০২৫",
         image_src: {
             small: rengnayaMurung,
-            large: rengnayaMurung
+            large: "/poster_images/murung.webp"
         },
         story: `স্কুল হোস্টেলের সেই হাস্যজ্জল মুখ, যার হাসিতে প্রাণবন্ত থাকতো হোস্টেলের প্রতিটি কোনা|
   কিন্তু সেপ্টেম্বরের কোনো এক নিকষ কালো প্রহরে সেই হাসি মিলিয়ে যায় অজানায়|
@@ -1269,7 +1282,7 @@ const memories = [
         dates: "৬ ডিসেম্বর, ২০২৫",
         image_src: {
             small: robiulImg,
-            large: robiulImg
+            large: "/poster_images/robiul.webp"
         },
         story: `ভিড়ের মাঝে হঠাৎ হারিয়ে যায় ১২ বছরের কিশোরী এইচ শেহজাদি হাসনা।
 ০৬/১২/২০২৫, শনিবার—ঘোটা বাস স্ট্যান্ড থেকে সে আর বাড়ি ফেরেনি।
@@ -1285,7 +1298,7 @@ const memories = [
         dates: "১৬ সেপ্টেম্বর, ২০২৫",
         image_src: {
             small: abdulMazidImg,
-            large: abdulMazidImg
+            large: "/poster_images/abdul-mojid.webp"
         },
         story: `নরম বিকেলের আলোয় রানাভোলা উত্তর রোডের মোড়টা ছিল চেনা কোলাহলে ভরা। মেঘকা মেম্বারের বাড়ির পাশের মাঠে সেদিন খেলছিল আড়াই বছরের ছোট্ট আব্দুল মাজিদ। ফর্সা গায়ের রং, পরনে সাদা কাপড়—হাসিতে ভরা তার ছোট্ট মুখটা যেন মাঠের সবুজে আলাদা করে ঝিলমিল করছিল।
 
