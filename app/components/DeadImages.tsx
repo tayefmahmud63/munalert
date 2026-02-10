@@ -1,11 +1,26 @@
 
 "use client";
-import { deadImagesData } from "../utils/deadImagesData";
+import { deadImagesData as rawDeadImagesData } from "../utils/deadImagesData";
 import MemoriesModal from "../../src/components/MemoriesModal";
 import { useState } from "react";
 
 
+
 function DeadImagesStatic() {
+  // Patch the data to match MemoryType
+  const deadImagesData = rawDeadImagesData.map((item) => ({
+    seat: "",
+    posterLink: "",
+    image1: undefined,
+    image2: undefined,
+    image3: undefined,
+    ...item,
+    image_src: {
+      small: item.image_src.large,
+      ...item.image_src,
+    },
+  }));
+
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
