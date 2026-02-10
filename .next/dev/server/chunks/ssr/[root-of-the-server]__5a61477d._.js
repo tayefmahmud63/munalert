@@ -170,7 +170,7 @@ function Footer() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-white text-sm opacity-80 mb-4 max-w-xs text-center md:text-left",
-                                children: "নিখোঁজ শিশুদের রিপোর্ট এবং খুঁজে বের করার জন্য বাংলাদেশের জাতীয় প্ল্যাটফর্ম। প্রতিটি সেবার গুরুত্বপূর্ন। একসাথে, আমরা শিশুদের ঘরে ফিরিয়ে আনি।"
+                                children: "নিখোঁজ শিশুদের রিপোর্ট ও উদ্ধারের জন্য বাংলাদেশের জাতীয় প্ল্যাটফর্ম। আপনি, আমি, আমরা সবাই একসাথে চলুন হারানো শিশুদের ঘরে ফিরিয়ে আনি"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/footer.tsx",
                                 lineNumber: 16,
@@ -188,12 +188,12 @@ function Footer() {
                                             className: "h-6 w-6 text-white hover:text-[#ea477e] transition"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/footer.tsx",
-                                            lineNumber: 20,
+                                            lineNumber: 21,
                                             columnNumber: 115
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/footer.tsx",
-                                        lineNumber: 20,
+                                        lineNumber: 21,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -205,12 +205,12 @@ function Footer() {
                                             className: "h-6 w-6 text-white hover:text-[#ea477e] transition"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/footer.tsx",
-                                            lineNumber: 21,
+                                            lineNumber: 22,
                                             columnNumber: 116
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/footer.tsx",
-                                        lineNumber: 21,
+                                        lineNumber: 22,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -222,12 +222,12 @@ function Footer() {
                                             className: "h-6 w-6 text-white hover:text-[#ea477e] transition"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/footer.tsx",
-                                            lineNumber: 22,
+                                            lineNumber: 23,
                                             columnNumber: 114
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/footer.tsx",
-                                        lineNumber: 22,
+                                        lineNumber: 23,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -239,18 +239,18 @@ function Footer() {
                                             className: "h-6 w-6 text-white hover:text-[#ea477e] transition"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/footer.tsx",
-                                            lineNumber: 23,
+                                            lineNumber: 24,
                                             columnNumber: 114
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/footer.tsx",
-                                        lineNumber: 23,
+                                        lineNumber: 24,
                                         columnNumber: 7
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/footer.tsx",
-                                lineNumber: 19,
+                                lineNumber: 20,
                                 columnNumber: 6
                             }, this)
                         ]
@@ -267,12 +267,12 @@ function Footer() {
                             className: "h-48 w-auto"
                         }, void 0, false, {
                             fileName: "[project]/app/components/footer.tsx",
-                            lineNumber: 28,
+                            lineNumber: 29,
                             columnNumber: 6
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/footer.tsx",
-                        lineNumber: 27,
+                        lineNumber: 28,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -283,7 +283,7 @@ function Footer() {
                                 children: "জরুরি যোগাযোগ"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/footer.tsx",
-                                lineNumber: 32,
+                                lineNumber: 33,
                                 columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -293,7 +293,7 @@ function Footer() {
                                         className: "h-5 w-5"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/footer.tsx",
-                                        lineNumber: 34,
+                                        lineNumber: 35,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -302,7 +302,7 @@ function Footer() {
                                         children: "13219"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/footer.tsx",
-                                        lineNumber: 35,
+                                        lineNumber: 36,
                                         columnNumber: 7
                                     }, this),
                                     " / ",
@@ -312,13 +312,13 @@ function Footer() {
                                         children: "999"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/footer.tsx",
-                                        lineNumber: 35,
+                                        lineNumber: 36,
                                         columnNumber: 67
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/footer.tsx",
-                                lineNumber: 33,
+                                lineNumber: 34,
                                 columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -328,7 +328,7 @@ function Footer() {
                                         className: "h-5 w-5"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/footer.tsx",
-                                        lineNumber: 38,
+                                        lineNumber: 39,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -337,19 +337,19 @@ function Footer() {
                                         children: "help@munalert.org"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/footer.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 40,
                                         columnNumber: 7
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/footer.tsx",
-                                lineNumber: 37,
+                                lineNumber: 38,
                                 columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/footer.tsx",
-                        lineNumber: 31,
+                        lineNumber: 32,
                         columnNumber: 5
                     }, this)
                 ]
@@ -363,7 +363,7 @@ function Footer() {
                 children: "© ২০২৬ মুন আলার্ট। বাংলাদেশ সরকার। সর্বস্বত্ব সংরক্ষিত।"
             }, void 0, false, {
                 fileName: "[project]/app/components/footer.tsx",
-                lineNumber: 43,
+                lineNumber: 44,
                 columnNumber: 4
             }, this)
         ]
