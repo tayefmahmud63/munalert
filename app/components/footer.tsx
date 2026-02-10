@@ -14,7 +14,8 @@ export default function Footer() {
 			
 					</div>
 					<p className="text-white text-sm opacity-80 mb-4 max-w-xs text-center md:text-left">
-						নিখোঁজ শিশুদের রিপোর্ট এবং খুঁজে বের করার জন্য বাংলাদেশের জাতীয় প্ল্যাটফর্ম। প্রতিটি সেবার গুরুত্বপূর্ন। একসাথে, আমরা শিশুদের ঘরে ফিরিয়ে আনি।
+নিখোঁজ শিশুদের রিপোর্ট ও উদ্ধারের জন্য বাংলাদেশের জাতীয় প্ল্যাটফর্ম। 
+আপনি, আমি, আমরা সবাই একসাথে চলুন হারানো শিশুদের ঘরে ফিরিয়ে আনি
 					</p>
 					<div className="flex gap-4 mt-2">
 						<a href="https://www.facebook.com/MUNalert" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook className="h-6 w-6 text-white hover:text-[#ea477e] transition" /></a>

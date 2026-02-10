@@ -44,7 +44,8 @@ function DeadImagesStatic() {
         আমাদের হারিয়ে ফেলা ফুল গুলো
       </h1>
       <p className="text-white text-base mb-6 max-w-[620px] text-center px-4 md:px-12" style={{ fontFamily: 'CustomFont2, Arial, Helvetica, sans-serif',  }}>
-        বাংলাদেশে মুন অ্যালার্ট চালুর আগে কোনো কার্যকর নিখোঁজ শিশু জরুরি নোটিফিকেশন সিস্টেম ছিল না, সেই অভাবের কারণেই আমরা অনেক ছোট ছোট শিশুকে হারিয়েছি ফুলের মতো নিষ্পাপ প্রাণগুলো ঝরে গেছে
+নিখোঁজ শিশুদের সন্ধানে জরুরি নোটিফিকেশন পদ্ধতি না থাকার কারণে ঝরে গেছে অনেক রঙিন ফুল। এই ফুলদের ফিরে পেতেই বাংলাদেশ মুন অ্যালার্টের আবির্ভাব।
+
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-24 py-8">
         {deadImagesData.map((memory, idx) => (

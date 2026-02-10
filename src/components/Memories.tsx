@@ -33,7 +33,8 @@ export default function Memories() {
 
         </h1>
       <p className="text-base max-w-xl mx-auto text-center mb-6 text-white px-4 md:px-12" style={{ fontFamily: 'CustomFont2, Arial, Helvetica, sans-serif',  }}>
-					চলুন, আমরা সবাই একসঙ্গে কাজ করি যেসব শিশু এখনো নিখোঁজ রয়েছে, তাদের নিরাপদে ঘরে ফিরিয়ে আনার জন্য।
+হারানো ফুলদের ফিরিয়ে আনতে আমরা সবাই এগিয়ে আসি।
+
 
 					</p>
        
